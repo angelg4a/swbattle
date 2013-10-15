@@ -1,0 +1,24 @@
+- "Sample 1":
+    city: "Usa-aaa"
+    country: "USA"
+    date: 2013/40/15 # YYYY/MM/DD
+
+- "Sample 2":
+    city: "usa-aa"
+    country: "USA"
+    date: 2013/40/15 # YYYY/MM/DD
+
+- "Sample 3":
+    city: "Minus eius consequatur architecto at ea laudantium qui."
+    country: "EUR"
+    date: 2013/40/15 # YYYY/MM/DD
+
+- "Sample 4":
+    city: "Id sed doloribus ut dolores."
+    country: "AUS"
+    date: 2013/40/15 # YYYY/MM/DD
+
+- "Sample 5":
+    city: "usa-a"
+    country: "USA"
+    date: 2013/40/15 # YYYY/MM/DD

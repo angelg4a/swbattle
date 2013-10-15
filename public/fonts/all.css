@@ -1,17 +1,17 @@
 @font-face
 {
 font-family: "MuseoLight" ;
-src: url('Museo100-Regular.otf')
+src: url('MuseoSans-100.otf')
 }
 @font-face
 {
 font-family: "MuseoRegular" ;
-src: url('Museo300-Regular.otf')
+src: url('MuseoSans-300.otf')
 }
 @font-face
 {
 font-family: "MuseoBold" ;
-src: url('Museo700-Regular.otf')
+src: url('MuseoSans_700.otf')
 }
 @font-face
 {

@@ -22,37 +22,57 @@ position: 0
 <body>
   {% include header %}
 
-<div>
+<div class="content-slider">
   <!-- <div class='row'> -->
     <!-- <div <div class="large-12 medium-12 small-12 columns"> -->
-      <div class="banner" style="overflow: hidden;width: 100%;height: 515px !important;">
+      <div class="banner">
           <ul class='mayus bebas'>
-              <li style="background-image: url('images/slide1.png'); background-size: cover; width: 25%;">
+              <li class="slide1">
             
             <p>thousands of entrepreneurs across the globe have joined the battle for innovation. </p>
             <h2>Have you?</h2>
           
             <a class="btn mayus" href="#download">Enter the batle</a>
           </li>
-          <li style="background-image: url(images/slide2.png); background-size: cover; width: 25%;">
+          <li class="slide2">
             
             <p>Conquer the battle for innovation and win the flights, mentorship, & intros to launch your startup</p>
 
             <h2>Ready to win 500k in prizes?</h2>           
           </li>
-          <li style="background-image: url('images/slide1.png'); background-size: cover; width: 25%;">
+          <li class="slide3">
             <p class='mayus'>Thousands of entrepreneurs across the globe have joined the battle for innovation.</p>
 
             <h2>New to GSB?</h2>
             
-            <a class="btn various fancybox.iframe"  title="The Falltape" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">Watch the video</a>
+            <a class="btn various fancybox.iframe" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1&amp;wmode=transparent">Watch the video</a>
           </li>
           </ul>
       </div>
+      <div class="arrows"></div>
     <!-- </div> -->
   <!-- </div> -->
 </div>
-
+<div id="menu-second">
+  <div class="row">
+    <div class="large-offset-2 large-12 medium-12 small-12 columns ctm-m">
+    <div>
+    <a href="/cities" class="fanc">
+      <div class="sprites-social pin"></div><p> FIND EVENT</p>
+    </a>
+    </div>
+    <div>
+      <a class="btn various fancybox.iframe" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1&amp;wmode=transparent"><div class="sprites-social playvideo"></div>WATCH VIDEO</a>
+   </div>
+   <div>
+      <a href="#">
+        <div class="sprites-social share"></div> SHARE THIS
+      </a>
+   </div>
+             
+    </div>
+  </div>
+</div>
 
 
 
@@ -85,12 +105,11 @@ position: 0
   <img src="{{ 'microsoft.png' | theme_image_url }}" alt="StartUp Battle" />
   <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="StartUp Battle" />
  <img src="{{ 'sprint.png' | theme_image_url }}" alt="StartUp Battle" />
+ </div>'
  </div>
-</div>
-</div>
-
-
-
+ </div>
+ 
+ 
 
   {% include footer %}
 
@@ -98,7 +117,7 @@ position: 0
   {{ 'zepto.js' | javascript_tag }}
   {{ 'foundation/foundation.js' | javascript_tag }}
   {{ 'jquery' | javascript_tag }}
-   <script src="//unslider.com/unslider.min.js"></script>
+   <script src="//unslider.com/unslider.min.js"></script> 
   {{ 'source/jquery.fancybox' | javascript_tag }}
  {{ 'chosen.jquery' | javascript_tag }}
     {{ 'scripts' | javascript_tag }}

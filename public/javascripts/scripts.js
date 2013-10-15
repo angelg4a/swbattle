@@ -3,9 +3,8 @@ $(document).ready(function(){
 });
 $(function() {
     $('.banner').unslider({
-        // speed: 1500,               //  The speed to animate each slide (in milliseconds)
-        delay: 3000,              //  The delay between slide animations (in milliseconds)
-        complete: function() {},  //  A function that gets called after every slide animation
+        speed: 1000,               //  The speed to animate each slide (in milliseconds)
+        delay: 8000,              //  The delay between slide animations (in milliseconds)
         keys: true,               //  Enable keyboard (left, right) arrow shortcuts
         dots: true,               //  Display dot navigation
         fluid: true              //  Support responsive design. May break non-responsive designs
@@ -13,18 +12,44 @@ $(function() {
 });
 
 $(document).ready(function(){
+
+	var top = $(this).find('.img-ue').position().top;
+	var top_menu = $(this).find('#menu-second').position().top;
+	$('.arrows').click(function() {
+       $('body').animate({ scrollTop: top_menu });
+    });
+	var open=true;
     $window = $(window);
+    $window.scroll(function() {
+    	if (($(window).scrollTop()>=top_menu)&&(open)){
+
+    		$('#menu-second').addClass('fixed').slideDown('600').height(50);
+
+    		open=false;
+
+    	}
+    	if (($(window).scrollTop()<top_menu)&& (!open)){
+    		$('#menu-second').removeClass('fixed').height(1);
+    		open= true;
+    	}
+    });
+
+
+
+
+
     $('.img-ue').each(function(){
         var $bgobj = $(this); // assigning the object
      
         $window.scroll(function() {
-            var yPos = -($window.scrollTop() / 10); 
-             
-            // Put together our final background position
-            var coords = '0% '+ ($(this).scrollTop() / 7)  + '%';
+        	if ($(window).scrollTop()>(top-100)) {
+            
+            var coords = '0% '+ (($(this).scrollTop()-(top-95))/ 6)  + '%';
  
             // Move the background
             $bgobj.css({ backgroundPosition: coords });
+        }
+
         }); 
     });
 

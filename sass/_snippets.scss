@@ -40,6 +40,7 @@
 .img-ue{ 
 	background-image: url('/images/ue.png');
 	padding-bottom: 30px;
+	position:relative;
 }
 hr {
   background-color: #fff;
@@ -71,131 +72,6 @@ hr {
 .space-60{ 
 	padding-top: 60px;
 }
-
-.banner {
-	position: relative;
-	width: 100%;
-	overflow: auto;
-
-	font-size: 18px;
-	line-height: 24px;
-	text-align: center;
-
-	color: rgba(255,255,255,.6);
-	text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
-
-	background: #5b4d3d;
-	box-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-.banner ul {
-	list-style: none;
-	width: 300%;
-}
-.banner ul li {
-	display: block;
-	float: left;
-	width: 33%;
-	padding: 60px 0 110px;
-	
-	min-height: 350px;
-	
-/*		-webkit-background-size: 100% 100%;*/
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-ms-background-size: 100% 100%;
-/*		background-size: 100% 100%;*/
-	
-	box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
-}
-	
-.banner h2 {
-	font-size: 100px;
-	/*line-height: 52px;*/
-	color: #fff;
-	font-family: 'BebasNeue';
-	margin-bottom: 0;
-}
-
-.banner p {
-	font-size: 45px;
-/*	line-height: 52px;
-*/	color: #fff;
-	font-family: 'BebasNeue';
-	margin-bottom: 0;
-	width: 63%;
-
-	margin-left: 20%;
-}
-
-.banner .btn {
-	display: inline-block;
-	margin: -15px 0 0;
-	padding: 7px 40px;
-	clear: both;
-	
-	width: 240px;
-	height: 50px;
-	font-family: 'BebasNeue';
-
-	color: #fff;
-	font-size: 25px;
-	background-color: #c62426;
-	/*font-weight: bold;*/
-	text-transform: uppercase;
-	text-decoration: none;
-	
-	/*border: 2px solid rgba(255,255,255,.4);*/
-	/*border-radius: 5px;*/
-}
-.banner .btn:hover {
-	/*background: rgba(255,255,255,.05);*/
-}
-.banner .btn:active {
-	-webkit-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-	-moz-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-	-ms-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-	-o-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-	filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
-}
-		
-.banner .btn, .banner .dot {
-	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-	filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
-}
-	
-.banner .dots {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0px;
-}
-.banner .dots li {
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	margin: 0 10px;
-	background-color: #fff;
-	text-indent: -999em;
-	
-	border: 2px solid #fff;
-	border-radius: 6px;
-	
-	cursor: pointer;
-	/*opacity: .4;*/
-	
-	-webkit-transition: background .5s, opacity .5s;
-	-moz-transition: background .5s, opacity .5s;
-	transition: background .5s, opacity .5s;
-}
-.banner .dots li.active {
-	background: #fff;
-	opacity: 1;
-}
-
-
 .txt-title{
 text-align: center;
 width: 658px;
@@ -254,3 +130,180 @@ width: 145px;
 height: 145px;
 margin: 0 auto;
 }
+.content-slider{
+position: relative;
+margin-top: -92px;
+z-index: 2;
+}
+
+
+.banner {
+	position: relative;
+	width: 100%;
+	text-align: center;
+
+	color: rgba(255,255,255,.6);
+	text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+
+	background: #000;
+	box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	overflow: hidden;
+	height: 500px !important;
+}  
+.banner:after , .img-ue:after{
+content: "";
+position: absolute;
+background: rgba(0, 0, 0, 0.4);
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 1;
+}
+.cnt-evtn{
+	position: relative;
+	z-index:99;
+}
+.banner ul {
+	list-style: none;
+	width: 300%;
+}
+.banner ul li {
+	display: block;
+	float: left;
+	width: 33%;
+	padding: 60px 0 110px;
+	
+	min-height: 350px;
+	
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-ms-background-size: 100% 100%;
+	
+	box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+}
+	
+.banner h2 {
+	font-size: 100px;
+	color: #fff;
+	font-family: 'BebasNeue';
+	margin-bottom: 0;
+	z-index: 2;
+	position: relative;
+}
+
+.banner p {
+	font-size: 45px;
+	color: #fff;
+	font-family: 'BebasNeue';
+	margin-bottom: 0;
+	width: 63%;
+
+	margin-left: 20%;
+	z-index: 2;
+	position: relative;
+}
+
+.banner .btn {
+
+	display: inline-block;
+	margin: -15px 0 0;
+	padding: 7px 40px;
+	clear: both;
+	
+	width: 240px;
+	height: 50px;
+	font-family: 'BebasNeue';
+
+	color: #fff;
+	font-size: 25px;
+	background-color: #c62426;
+	text-transform: uppercase;
+	text-decoration: none;
+	z-index: 2;
+	position: relative;
+} 
+.banner .btn:hover {
+	background: #C6244B;
+}
+.banner .btn:active {
+	-webkit-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+	-moz-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+	-ms-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+	-o-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+	filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
+}
+		
+.banner .btn, .banner .dot {
+	-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+	filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+}
+	
+.banner .dots {
+	position: absolute;
+left: 0;
+right: 0;
+bottom: 25px;
+z-index: 2;
+margin-top: -17px;
+}
+.banner .dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 10px;
+	background-color: #fff;
+	text-indent: -999em;
+	
+	border: 2px solid #fff;
+	border-radius: 6px;
+	
+	cursor: pointer;
+	
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+       background: #C6244B;
+       opacity: 1;
+       border: 2px solid #C6244B;
+}
+
+.boton:hover {
+       background: #C6244B;
+}
+
+.slide1{
+	height: 500px;
+	background-image: url('/images/slide1.png'); 
+	background-size: 100%;
+	/*width: 25%;*/
+}
+.slide2{
+	height: 500px;
+	background-image: url('/images/slide2.png'); 
+	background-size: 100%;
+	/*width: 25%;*/
+}
+.slide3{
+	height: 500px;
+	background-image: url('/images/slide3.png'); 
+	background-size: 100%;
+	/*width: 25%;*/
+}
+		
+.arrows{
+	height: 18px;
+background-image: url("/images/arrows.png");
+margin-top: -46px;
+position: relative;
+width: 10px;
+margin: -31px auto 13px;
+z-index: 99;
+cursor: pointer;
+}
+

@@ -5,7 +5,9 @@ body{
 }
 header{
 	background: black;
-	padding: 30px 0px 20px 0px;
+	padding: 30px 0px 42px 0px;
+	position: relative;
+z-index: 10;
 }
 h1 {
 font-size: 2.7em;
@@ -39,6 +41,8 @@ background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* I
 background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-8 */
 height: 85px;
+position: relative;
+z-index: 9;
 }
 .main-content{
 	background: white;
@@ -121,9 +125,9 @@ top: -8px;
 .google-f { width: 22px; height: 22px; background-position: 0 -51px; }
 .google-h { width: 12px; height: 13px; background-position: -33px -23px; }
 .mail {float:left; margin-right:7px; width: 26px; height: 15px; background-position: 0 -74px; }
-.pin { width: 14px; height: 25px; background-position: 0 -23px; }
-.playvideo { width: 17px; height: 16px; background-position: -28px -73px; }
-.share { width: 21px; height: 16px; background-position: -24px -37px; }
+.pin { float:left; margin-right:20px; width: 14px; height: 25px; background-position: 0 -23px; }
+.playvideo {float:left; margin-right:20px; width: 17px; height: 16px; background-position: -28px -73px; }
+.share { float:left; margin-right:20px; width: 21px; height: 16px; background-position: -24px -37px; }
 .top { width: 21px; height: 13px; background-position: -24px -54px; }
 .twiiter-f { width: 22px; height: 22px; background-position: -23px 0; }
 .twiiter-h { width: 15px; height: 13px; background-position: -15px -23px; }
@@ -200,7 +204,7 @@ display: inline-block;
 margin-left: 10px;
 }
 .shared  a:hover{
-	 -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(33%, transparent), to(rgba(255, 255, 255, 0.1)));
+	 -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(33%, transparent), to(rgba(255, 255, 255, 0.15)));
 }
 .shared{
 	margin-bottom: 30px;
@@ -216,4 +220,40 @@ font-weight: 100;
 }
 .formtxt{
 	color:white;
+}
+#menu-second{
+	background:black;
+	height: 1px;
+	/* Set our transitions up. */
+	-webkit-transition: height 0.8s;
+	-moz-transition: height 0.8s;
+	transition: height 0.8s;
+	overflow: hidden
+	
+}
+.fixed{
+
+	position: fixed;
+top:0px;
+left:0px;
+right:0px;
+z-index:999999;
+}
+.ctm-m >div{
+	display:inline-block;
+	margin-right: 10%;
+}
+.ctm-m{
+	margin-top:12px;
+}
+.ctm-m a{
+	color: white;
+}
+.ctm-m a:hover{
+	color:#c62426;
+}
+.fanc{
+	width: 136px;
+overflow: hidden;
+display: block;
 }

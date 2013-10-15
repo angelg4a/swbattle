@@ -26,12 +26,12 @@
 
 .fancybox-skin {
 	position: relative;
-	background: #f9f9f9;
-	color: #444;
+	/*background: #f9f9f9;*/
+	/*color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
-	        border-radius: 4px;
+	        border-radius: 4px;*/
 }
 
 .fancybox-opened {
@@ -39,9 +39,9 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	/*-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);*/
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -75,8 +75,12 @@
 	max-height: 100%;
 }
 
-#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+#fancybox-loading, .fancybox-prev span, .fancybox-next span {
 	background-image: url('fancybox_sprite.png');
+}
+
+.fancybox-close{
+	background-image: url('close.png');
 }
 
 #fancybox-loading {
@@ -99,14 +103,14 @@
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
-	right: -18px;
-	width: 36px;
-	height: 36px;
+	top: -10px;
+	right: -15px;
+	width: 40px;
+	height: 41px;
 	cursor: pointer;
 	z-index: 8040;
 }
-
+ 
 .fancybox-nav {
 	position: absolute;
 	top: 0;
@@ -226,12 +230,12 @@
 	margin-right: -100%;
 	padding: 2px 20px;
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
-	background: rgba(0, 0, 0, 0.8);
+	/*background: rgba(0, 0, 0, 0.8);
 	-webkit-border-radius: 15px;
 	   -moz-border-radius: 15px;
 	        border-radius: 15px;
 	text-shadow: 0 1px 2px #222;
-	color: #FFF;
+	color: #FFF;*/
 	font-weight: bold;
 	line-height: 24px;
 	white-space: nowrap;
@@ -262,9 +266,14 @@
 	   only screen and (min--moz-device-pixel-ratio: 1.5),
 	   only screen and (min-device-pixel-ratio: 1.5){
 
-	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	#fancybox-loading, .fancybox-prev span, .fancybox-next span {
 		background-image: url('fancybox_sprite@2x.png');
 		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+
+	.fancybox-close{
+		background-image: url('close.png');
+		background-size: 44px 152px;
 	}
 
 	#fancybox-loading div {
