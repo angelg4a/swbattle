@@ -14,7 +14,7 @@ font-family: 'BebasNeue';
 .menu > li{
 	display: inline-block;
 	list-style-type: none;
-	padding: 35px 60px 0px 0px;
+	padding: 35px 8% 0px 0px;
 	text-transform: uppercase;
 
 }
@@ -45,7 +45,7 @@ height: 85px;
 	max-width: 1300px;
 	
 	padding-bottom: 75px;
-	margin: -85px auto 0px auto;
+	margin: -13px auto 0px auto;
 
 }
 h1.main-title{
@@ -120,7 +120,7 @@ top: -8px;
 .facebook-h { width: 8px; height: 13px; background-position: -15px -37px; }
 .google-f { width: 22px; height: 22px; background-position: 0 -51px; }
 .google-h { width: 12px; height: 13px; background-position: -33px -23px; }
-.mail { width: 26px; height: 15px; background-position: 0 -74px; }
+.mail {float:left; margin-right:7px; width: 26px; height: 15px; background-position: 0 -74px; }
 .pin { width: 14px; height: 25px; background-position: 0 -23px; }
 .playvideo { width: 17px; height: 16px; background-position: -28px -73px; }
 .share { width: 21px; height: 16px; background-position: -24px -37px; }
@@ -150,4 +150,70 @@ position: relative; width: 89px; height: 89px; background-position: -523px 0; }
 .tools { width: 192px; height: 181px; background-position: 0 0; }
 
 
+.cntn-menu{
+	margin-bottom: -65px !important;
+}
+.logos-fblk, .logos-sblk   {
+	text-align: center;
 
+}
+.logos-fblk img {
+padding: 40px 9% 50px 0px;
+}
+
+.logos-fblk img:last-child, .logos-sblk img:last-child {
+padding-right:0px;
+}
+.logos-sblk img{
+padding: 25px 5% 0px 0px;
+}
+.logos-sblk img:first-child{
+	padding-right:9%;
+}
+h3.subtit-footer{
+	font-family:'BebasNeue', sans-serif;
+	color:#c62426;
+	font-size:18px;
+	
+	margin-bottom:12px;
+	font-weight:100;
+}
+footer{
+	background: black;
+	padding-top:70px;
+	padding-bottom: 50px;
+}
+.menu-footer{
+	list-style-type:none;
+	font-family:'MuseoLight';
+	font-size:16px;
+	
+}
+.menu-footer li{
+	margin-bottom: 5px;
+}
+.menu-footer li a:hover, a.mailref:hover{
+	color:#c62426;
+}
+.shared  a  {
+display: inline-block;
+margin-left: 10px;
+}
+.shared  a:hover{
+	 -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(33%, transparent), to(rgba(255, 255, 255, 0.1)));
+}
+.shared{
+	margin-bottom: 30px;
+}
+.boton-f {
+font-size: 26px;
+color: #fff;
+background-color: #c62426;
+border: 0px;
+width: 87px;
+height: 43px;
+font-weight: 100;
+}
+.formtxt{
+	color:white;
+}

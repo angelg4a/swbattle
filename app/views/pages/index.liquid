@@ -11,26 +11,82 @@ position: 0
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Startup Battle</title>
- {{ '/fonts/all' | stylesheet_tag }}
+  {{ '/fonts/all' | stylesheet_tag }}
   {{ 'application.css' | stylesheet_tag }}
+
+
+  <link rel="stylesheet" type="text/css" href="/javascripts/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 </head>
 <body>
   {% include header %}
 
+<div>
+  <!-- <div class='row'> -->
+    <!-- <div <div class="large-12 medium-12 small-12 columns"> -->
+      <div class="banner" style="overflow: hidden;width: 100%;height: 515px !important;">
+          <ul class='mayus bebas'>
+              <li style="background-image: url('images/slide1.png'); background-size: cover; width: 25%;">
+            
+            <p>thousands of entrepreneurs across the globe have joined the battle for innovation. </p>
+            <h2>Have you?</h2>
+          
+            <a class="btn mayus" href="#download">Enter the batle</a>
+          </li>
+          <li style="background-image: url(images/slide2.png); background-size: cover; width: 25%;">
+            
+            <p>Conquer the battle for innovation and win the flights, mentorship, & intros to launch your startup</p>
+
+            <h2>Ready to win 500k in prizes?</h2>           
+          </li>
+          <li style="background-image: url('images/slide1.png'); background-size: cover; width: 25%;">
+            <p class='mayus'>Thousands of entrepreneurs across the globe have joined the battle for innovation.</p>
+
+            <h2>New to GSB?</h2>
+            
+            <a class="btn various fancybox.iframe"  title="The Falltape" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">Watch the video</a>
+          </li>
+          </ul>
+      </div>
+    <!-- </div> -->
+  <!-- </div> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
  {% include caracteristicas %}
+ {% include events %}
  {% include battle_glance %}
 
 <div class="row">
-  <div class="large-4 medium-4 small-12 columns"><img src="{{ 'google.png' | theme_image_url }}" alt="Google Entrepreneurs" /></div>
-  <div class="large-4 medium-4 small-12 columns"><img src="{{ 'coca-cola.png' | theme_image_url }}" alt="Coca Cola" /></div>
-  <div class="large-4 medium-4 small-12 columns"> <img src="{{ 'amazon.png' | theme_image_url }}" alt="Amazon" />  </div>
+  <div class="large-12 medium-offset-0 medium-12 small-12 columns">
+
+<div class="logos-fblk">
+  <img src="{{ 'google.png' | theme_image_url }}" alt="Google Entrepreneurs" />
+ <img src="{{ 'coca-cola.png' | theme_image_url }}" alt="Coca Cola" />
+  <img src="{{ 'amazon.png' | theme_image_url }}" alt="Amazon" /> 
+</div>
+
+</div>  
 </div>
 <div class="row">
+<div class=" large-12 medium-offset-0 medium-12 small-12 columns">
+<div class="logos-sblk">
  <img src="{{ 'co.png' | theme_image_url }}" alt="StartUp Battle" />
   <img src="{{ 'microsoft.png' | theme_image_url }}" alt="StartUp Battle" />
   <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="StartUp Battle" />
- <img src="{{ 'sprint.png' | theme_image_url }}" alt="StartUp Battle" /></div>
+ <img src="{{ 'sprint.png' | theme_image_url }}" alt="StartUp Battle" />
+ </div>
+</div>
 </div>
 
 
@@ -41,6 +97,14 @@ position: 0
   {{ 'custom.modernizr.js' | javascript_tag }}
   {{ 'zepto.js' | javascript_tag }}
   {{ 'foundation/foundation.js' | javascript_tag }}
+  {{ 'jquery' | javascript_tag }}
+   <script src="//unslider.com/unslider.min.js"></script>
+  {{ 'source/jquery.fancybox' | javascript_tag }}
+ {{ 'chosen.jquery' | javascript_tag }}
+    {{ 'scripts' | javascript_tag }}
+
+ 
+
 
   {% block page_specific_scripts %}
   {% endblock %}
