@@ -1,0 +1,48 @@
+---
+title: Home page
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+---
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Startup Battle</title>
+ {{ '/fonts/all' | stylesheet_tag }}
+  {{ 'application.css' | stylesheet_tag }}
+</head>
+<body>
+  {% include header %}
+
+ {% include caracteristicas %}
+ {% include battle_glance %}
+
+<div class="row">
+  <div class="large-4 medium-4 small-12 columns"><img src="{{ 'google.png' | theme_image_url }}" alt="Google Entrepreneurs" /></div>
+  <div class="large-4 medium-4 small-12 columns"><img src="{{ 'coca-cola.png' | theme_image_url }}" alt="Coca Cola" /></div>
+  <div class="large-4 medium-4 small-12 columns"> <img src="{{ 'amazon.png' | theme_image_url }}" alt="Amazon" />  </div>
+</div>
+<div class="row">
+ <img src="{{ 'co.png' | theme_image_url }}" alt="StartUp Battle" />
+  <img src="{{ 'microsoft.png' | theme_image_url }}" alt="StartUp Battle" />
+  <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="StartUp Battle" />
+ <img src="{{ 'sprint.png' | theme_image_url }}" alt="StartUp Battle" /></div>
+</div>
+
+
+
+
+  {% include footer %}
+
+  {{ 'custom.modernizr.js' | javascript_tag }}
+  {{ 'zepto.js' | javascript_tag }}
+  {{ 'foundation/foundation.js' | javascript_tag }}
+
+  {% block page_specific_scripts %}
+  {% endblock %}
+</body>
+</html>

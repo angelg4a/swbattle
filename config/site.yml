@@ -1,0 +1,5 @@
+---
+name: Global Startup Battle
+locales: [en]
+subdomain: gsb-cms
+domains: [gsb-cms.herokuapp.com]

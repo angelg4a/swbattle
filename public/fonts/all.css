@@ -1,0 +1,20 @@
+@font-face
+{
+font-family: "MuseoLight" ;
+src: url('Museo100-Regular.otf')
+}
+@font-face
+{
+font-family: "MuseoRegular" ;
+src: url('Museo300-Regular.otf')
+}
+@font-face
+{
+font-family: "MuseoBold" ;
+src: url('Museo700-Regular.otf')
+}
+@font-face
+{
+font-family: "BebasNeue" ;
+src: url('BebasNeue.otf')
+}
