@@ -8,3 +8,7 @@ production:
   email: john@doe.net
   password: apassword
   # api_key: <your api key here>
+hosting:
+  host: gsb-cms.locomotivehosting.com
+  api_key: 9b2fb990c1c70243cf38088460744d18c74118ea
+  ssl: true
