@@ -6,7 +6,6 @@ cache_strategy: none
 response_type: text/html
 position: 0
 ---
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -17,7 +16,6 @@ position: 0
   {{ 'application.css' | stylesheet_tag }}
   {{ '../javascripts/source/jquery.fancybox.css' | stylesheet_tag }}
 
- 
 </head>
 <body>
   {% include header %}
@@ -56,7 +54,7 @@ position: 0
 </div>
 <div id="menu-second">
   <div class="row">
-    <div class="large-offset-2 large-12 medium-12 small-12 columns ctm-m">
+    <div class="large-offset-2 large-12 medium-offset-0 medium-12 small-12 columns ctm-m">
     <div>
     <a href="/cities" class="fanc">
       <div class="sprites-social pin"></div><p> FIND EVENT</p>
@@ -73,17 +71,11 @@ position: 0
              
     </div>
   </div>
+  <div class="top-ctn">
+    <div class="sprites-social top"></div>
+    TOP
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 <div class="row">
   <div class=" medium-12 large-12 columns">
     <div class="row">
@@ -132,9 +124,7 @@ position: 0
         </div>
         <div class="large-4 medium-4 small-12 columns">
           <div class='center'>
-
             <div class=" sprites-stats  tools"></div>
-
           </div>
           {% editable_text communicate %}
           <div class='center'>
@@ -153,7 +143,6 @@ position: 0
     </div>
   </div>
  {% include events %}
- 
  <div class="bg-lgray">
   <div class="row">
     <div class=" medium-12 large-12 columns">
@@ -241,7 +230,7 @@ position: 0
   <img src="{{ 'microsoft.png' | theme_image_url }}" alt="StartUp Battle" />
   <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="StartUp Battle" />
  <img src="{{ 'sprint.png' | theme_image_url }}" alt="StartUp Battle" />
- </div>'
+ </div>
  </div>
  </div>
  {% endblock %}
@@ -253,15 +242,10 @@ position: 0
   {{ 'zepto.js' | javascript_tag }}
   {{ 'foundation/foundation.js' | javascript_tag }}
   {{ 'jquery' | javascript_tag }}
-   <script src="//unslider.com/unslider.min.js"></script> 
+  {{ 'unslider.min' | javascript_tag }}
   {{ 'source/jquery.fancybox' | javascript_tag }}
- {{ 'chosen.jquery' | javascript_tag }}
+  {{ 'chosen.jquery' | javascript_tag }}
     {{ 'scripts' | javascript_tag }}
 
- 
-
-
-  {% block page_specific_scripts %}
-  {% endblock %}
 </body>
 </html>

@@ -5833,6 +5833,15 @@ h2.size-60 {
   z-index: 99;
   cursor: pointer; }
 
+.inpt-red {
+  margin-bottom: 0px !important; }
+
+.error-email {
+  display: none;
+  height: 20px;
+  color: #c62426;
+  margin-bottom: 10px; }
+
 /* @group Base */
 .chosen-container {
   position: relative;
@@ -6447,6 +6456,7 @@ div.select:last-child {
   background-position: -24px -37px; }
 
 .top {
+  margin: 7px auto;
   width: 21px;
   height: 13px;
   background-position: -24px -54px; }
@@ -6462,6 +6472,21 @@ div.select:last-child {
   width: 15px;
   height: 13px;
   background-position: -15px -23px; }
+
+.top-ctn {
+  background: none repeat scroll 0 0 #C62426;
+  color: #FFFFFF;
+  float: right;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 0;
+  width: 55px;
+  cursor: pointer; }
+
+.top-ctn:hover {
+  background: #C6244B; }
 
 .sprites-empresas {
   background-image: url("/images/sprites/empresas.png");
@@ -6603,7 +6628,8 @@ footer {
   border: 0px;
   width: 87px;
   height: 43px;
-  font-weight: 100; }
+  font-weight: 100;
+  margin-top: 10px; }
 
 .formtxt {
   color: white; }
@@ -6704,7 +6730,7 @@ footer {
   div.gradient {
     height: 9px; }
 
-  .arrows {
+  .arrows, .menu-second {
     display: none !important; }
 
   .banner {

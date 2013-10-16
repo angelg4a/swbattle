@@ -130,10 +130,25 @@ top: -8px;
 .pin { float:left; margin-right:20px; width: 14px; height: 25px; background-position: 0 -23px; }
 .playvideo {float:left; margin-right:20px; width: 17px; height: 16px; background-position: -28px -73px; }
 .share { float:left; margin-right:20px; width: 21px; height: 16px; background-position: -24px -37px; }
-.top { width: 21px; height: 13px; background-position: -24px -54px; }
+.top {margin: 7px auto; width: 21px; height: 13px; background-position: -24px -54px; }
 .twiiter-f { width: 22px; height: 22px; background-position: -23px 0; }
 .twiiter-h {margin-top:40px; margin-right:3px; width: 15px; height: 13px; background-position: -15px -23px; }
 
+.top-ctn{
+	background: none repeat scroll 0 0 #C62426;
+    color: #FFFFFF;
+    float: right;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 0;
+    width: 55px;
+    cursor: pointer;
+}
+.top-ctn:hover{
+background: #C6244B;
+}
 .sprites-empresas { background-image: url('/images/sprites/empresas.png'); background-color: transparent; background-repeat: no-repeat; }
 .amazon { width: 195px; height: 74px; background-position: -92px 0; }
 .bigcommerce { width: 261px; height: 62px; background-position: -232px -149px; }
@@ -219,6 +234,7 @@ border: 0px;
 width: 87px;
 height: 43px;
 font-weight: 100;
+margin-top: 10px;
 }
 .formtxt{
 	color:white;
@@ -322,13 +338,14 @@ margin-top:-20px;
 }
 }
 @media only screen and (max-width : 480px) {
+	
 	.ctm-m > div{
 		margin-right: 0px;
 	}
 	div.gradient {
 height: 9px;
 }
-	.arrows{
+	.arrows, .menu-second{
 		display: none !important;
 	}
 	.banner{

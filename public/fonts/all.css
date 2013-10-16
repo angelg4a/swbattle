@@ -19,12 +19,12 @@
 	font-style: normal; 
 }
 @font-face { 
-	font-family: 'MuseoRegular'; 
-	src: url('museo/MuseoSans-700.eot'); 
-	src: url('museo/MuseoSans-700.eot?#iefix') format('embedded-opentype'), 
-	url('museo/MuseoSans-700.woff') format('woff'), 
-	url('museo/MuseoSans-700.ttf') format('truetype'), 
-	url('museo/MuseoSans-700.svg#MuseoSans-100') format('svg'); 
+	font-family: 'MuseoBold'; 
+	src: url('museo/MuseoSans_700.eot'); 
+	src: url('museo/MuseoSans_700.eot?#iefix') format('embedded-opentype'), 
+	url('museo/MuseoSans_700.woff') format('woff'), 
+	url('museo/MuseoSans_700.ttf') format('truetype'), 
+	url('museo/MuseoSans_700.svg#MuseoSans-700') format('svg'); 
 	font-weight: normal; 
 	font-style: normal; 
 }
