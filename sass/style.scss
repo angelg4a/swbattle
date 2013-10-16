@@ -52,18 +52,19 @@ z-index: 9;
 	margin: -13px auto 0px auto;
 
 }
+
 h1.main-title{
 		color: #c62426;
 		text-transform: uppercase;
 		padding: 80px 0px 75px 0px;
 		text-align: center;
-		font-size: 48px;
+		font-size: 44px;
 line-height: 1;
 font-weight: 500;
 }
 div.select{
 	width: 250px;
-	margin-right: 85px;
+	margin-right: 4%;
 	float: left;
 }
 div.select:last-child{
@@ -80,7 +81,7 @@ border-color: #76B9F0;
 	font-size: 19.96px;
 }
 .slct-content{
-	margin-bottom: 120px;
+	margin-bottom: 120px !important;
 }
 .cty-ttl{
 	border-bottom: 1px solid black;
@@ -99,7 +100,7 @@ padding-bottom: 7px;
 	padding-left: 30px;
 }
 .m-btm{
-	margin-bottom: 50px;
+	margin-bottom: 50px !important;
 }
 
 .ctn-txt{
@@ -121,7 +122,7 @@ top: -8px;
 
 .sprites-social { background-image: url('/images/sprites/social.png'); background-color: transparent; background-repeat: no-repeat; }
 .facebook-f { width: 22px; height: 22px; background-position: 0 0; }
-.facebook-h { width: 8px; height: 13px; background-position: -15px -37px; }
+.facebook-h {margin-top:40px; margin-right:3px; width: 8px; height: 13px; background-position: -15px -37px; }
 .google-f { width: 22px; height: 22px; background-position: 0 -51px; }
 .google-h { width: 12px; height: 13px; background-position: -33px -23px; }
 .mail {float:left; margin-right:7px; width: 26px; height: 15px; background-position: 0 -74px; }
@@ -130,7 +131,7 @@ top: -8px;
 .share { float:left; margin-right:20px; width: 21px; height: 16px; background-position: -24px -37px; }
 .top { width: 21px; height: 13px; background-position: -24px -54px; }
 .twiiter-f { width: 22px; height: 22px; background-position: -23px 0; }
-.twiiter-h { width: 15px; height: 13px; background-position: -15px -23px; }
+.twiiter-h {margin-top:40px; margin-right:3px; width: 15px; height: 13px; background-position: -15px -23px; }
 
 .sprites-empresas { background-image: url('/images/sprites/empresas.png'); background-color: transparent; background-repeat: no-repeat; }
 .amazon { width: 195px; height: 74px; background-position: -92px 0; }
@@ -246,10 +247,10 @@ z-index:999999;
 .ctm-m{
 	margin-top:12px;
 }
-.ctm-m a{
+.ctm-m a, a.citref {
 	color: white;
 }
-.ctm-m a:hover{
+.ctm-m a:hover, a.citref:hover{
 	color:#c62426;
 }
 .fanc{
@@ -257,3 +258,113 @@ z-index:999999;
 overflow: hidden;
 display: block;
 }
+@media only screen and (max-width : 1024px) {
+	.banner{
+		height:400px !important;
+	}
+.banner p{
+	line-height: 1.1;
+	font-size: 39px;
+}
+.banner h2{
+	font-size:60px;
+}
+}
+@media only screen and (max-width : 769px) {
+	.rdsocial{
+		width: 16.66% !important;
+	}
+.menu > li{
+	padding:35px 4% 0px 0px;
+}
+	.banner{
+		height:300px !important;
+		margin-top: 45px;
+	}
+.banner p{
+	line-height: 1.1;
+	font-size: 24px;
+}
+.banner h2{
+	font-size:32px;
+	margin-bottom:10px;
+}
+.banner .btn{
+	padding: 0 15px;
+	height:42px;
+}
+div.gradient{
+	height:60px;
+}
+
+ }
+ @media only screen and (max-width : 600px) {
+ 	.rdsocial{
+ 		display: none;
+ 	}
+ 	.ctm-m > div{
+ 		margin-right: 6%;
+ 	}
+	.banner{
+		height:250px !important;
+		margin-top: 45px;
+	}
+.banner p {
+line-height: 1.1;
+font-size: 22px;
+width: 80%;
+margin-left: 10%;
+margin-top:-20px;
+}
+}
+@media only screen and (max-width : 480px) {
+	.ctm-m > div{
+		margin-right: 0px;
+	}
+	div.gradient {
+height: 9px;
+}
+	.arrows{
+		display: none !important;
+	}
+	.banner{
+		height:188px !important;
+		margin-top:60px;
+	}
+.menu > li {
+padding: 10px 2% 0px 0px;
+}
+.banner p{
+	margin-top: -30px;
+}
+.banner h2 {
+font-size: 28px;
+margin-bottom: 10px;
+}
+.banner .btn{
+	font-size: 20px;
+	padding: 0 6px;
+height: 32px;
+width: 156px;
+
+}
+div.gradient {
+height: 40px;
+}
+.banner .dots{
+bottom:-21px;
+}
+header{
+	padding: 6px 0px 42px 0px;
+}
+}
+@media only screen and (max-width : 320px) {
+.banner p{
+	font-size: 17px;
+}
+}
+
+.rdsocial a{
+	display: inline-block;
+}
+

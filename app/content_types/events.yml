@@ -55,11 +55,11 @@ fields:
     hint: A description of the field for the editors
     localized: false
 
-- eventos:
-    label: Eventos
-    type: has_many
-    target: eventos
-    inverse_of: country
-    ui_enabled: true
+#- eventos:
+ #   label: Eventos
+  #  type: has_many
+   # target: eventos
+    #inverse_of: country
+    #ui_enabled: true
 
     
