@@ -13,12 +13,19 @@ h1 {
 font-size: 2.7em;
 font-family: 'BebasNeue';
 }
+.menu{
+	float: left;
+	width: 80%;
+}
 .menu > li{
 	display: inline-block;
 	list-style-type: none;
 	padding: 35px 6.5% 0px 0px;
 	text-transform: uppercase;
 
+}
+.menu > li:last-child{
+	padding-right:0px;
 }
 .menu > li >a{
 	color: white;
@@ -29,6 +36,14 @@ font-family: 'BebasNeue';
 .menu > li > a:hover{
 	color: #c62426;
 	border-bottom: 2px solid #c62426;
+}
+.redss{
+	float: right;
+width: 105px;
+margin-top: 40px;
+}
+.redss div {
+display: inline-table;
 }
 div.gradient{
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -135,7 +150,7 @@ top: -8px;
 
 .sprites-social { background-image: url('/images/sprites/social.png'); background-color: transparent; background-repeat: no-repeat; }
 .facebook-f { width: 22px; height: 22px; background-position: 0 0; }
-.facebook-h {margin-top:40px; margin-right:3px; width: 8px; height: 13px; background-position: -15px -37px; }
+.facebook-h {margin-right:8px; width: 8px; height: 13px; background-position: -15px -37px; }
 .google-f { width: 22px; height: 22px; background-position: 0 -51px; }
 .google-h { width: 12px; height: 13px; background-position: -33px -23px; }
 .mail {float:left; margin-right:7px; width: 26px; height: 15px; background-position: 0 -74px; }
@@ -144,7 +159,7 @@ top: -8px;
 .share { float:left; margin-right:20px; width: 21px; height: 16px; background-position: -24px -37px; }
 .top {margin: 7px auto; width: 21px; height: 13px; background-position: -24px -54px; }
 .twiiter-f { width: 22px; height: 22px; background-position: -23px 0; }
-.twiiter-h {margin-top:40px; margin-right:3px; width: 15px; height: 13px; background-position: -15px -23px; }
+.twiiter-h { margin-right:8px; width: 15px; height: 13px; background-position: -15px -23px; }
 
 .top-ctn{
 	background: none repeat scroll 0 0 #C62426;
@@ -273,6 +288,9 @@ z-index:999999;
 	display:inline-table;
 	margin-right: 10%;
 }
+.ctm-m > div:last-child{
+	margin-right: 0px;
+}
 .ctm-m{
 	margin-top:12px;
 }
@@ -353,11 +371,27 @@ div.gradient{
 }
 
  }
+
  @media only screen and (max-width : 600px) {
+ 	.top-ctn{
+ 		right: 0px;
+ 	}
+ 	.logos-sblk img{
+ 		padding-bottom: 50px;
+ 	}
+ 	h2.subtitle{
+ 		font-size: 28px;
+ 	}
+ 	.redss{
+ 		margin-top: 17px;
+ 	}
+ 	.redss a{
+ 		margin-right: 15px;
+ 	}
  	div.select, .chosen-container {
 width: 162px !important;
 }
- 	.rdsocial{
+ 	.rdsocial, .menu{
  		display: none;
  	}
  	.ctm-m > div{
@@ -369,7 +403,7 @@ width: 162px !important;
 	}
 .banner p {
 line-height: 1.1;
-font-size: 22px;
+font-size: 27px;
 width: 80%;
 margin-left: 10%;
 margin-top:-20px;
@@ -377,10 +411,23 @@ margin-top:-20px;
 }
 
 @media only screen and (max-width : 480px) {
+	h1.main-title {
+    
+    font-size: 33px;
+    padding: 31px 0 27px;
+  }
 	 	div.select, .chosen-container {
-width: 137px !important;
+margin: 0 auto;
+    width: 90% !important;
+    float: inherit;
+
 }
-	
+div.select:last-child{
+	margin-right: auto;
+}
+	.slct-content {
+    margin-bottom: 55px !important;
+}
 	.ctm-m > div{
 		margin-right: 0px;
 	}
@@ -391,7 +438,7 @@ height: 9px;
 		display: none !important;
 	}
 	.banner{
-		height:188px !important;
+		height:320px !important;
 		margin-top:60px;
 	}
 .menu > li {
@@ -401,7 +448,7 @@ padding: 10px 2% 0px 0px;
 	margin-top: -30px;
 }
 .banner h2 {
-font-size: 28px;
+font-size: 47px;
 margin-bottom: 10px;
 }
 .banner .btn{
@@ -420,11 +467,28 @@ bottom:-21px;
 header{
 	padding: 6px 0px 42px 0px;
 }
+.ctm-m > div {
+    font-size: 13px;
+    }
+
 }
 @media only screen and (max-width : 320px) {
+	   .top-ctn{
+    	display: none;
+    }
+	.ctm-m > div {
+    font-size: 11px;
+    }
 .banner p{
-	font-size: 17px;
+	font-size: 27px;
 }
+.fanc{
+	width:90px;
+}
+.pin , .playvideo, .share{
+	margin-right: 7px;
+}
+
 }
 
 .rdsocial a{
