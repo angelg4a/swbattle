@@ -6292,7 +6292,21 @@ div.gradient {
   width: 100%;
   z-index: 9; }
 
-.main-content {
+div.gradiente {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+  height: 85px;
+  position: relative;
+  width: 100%;
+  z-index: 9; }
+
+.page-main {
   background: white;
   padding-bottom: 75px; }
 
@@ -6671,6 +6685,17 @@ footer {
 .fanc p {
   margin: 0; }
 
+.page {
+  margin: -51px auto;
+  background: white;
+  position: relative;
+  z-index: 9;
+  padding-bottom: 75px;
+  max-width: 1300px; }
+
+@media only screen and (max-width: 1299px) {
+  .page {
+    width: 98%; } }
 @media only screen and (max-width: 1024px) {
   .banner {
     height: 400px !important; }
@@ -6682,6 +6707,12 @@ footer {
   .banner h2 {
     font-size: 60px; } }
 @media only screen and (max-width: 769px) {
+  div.select, .chosen-container {
+    width: 215px !important; }
+
+  .slct-content {
+    padding: 0 10px; }
+
   .rdsocial {
     width: 16.66% !important; }
 
@@ -6707,6 +6738,9 @@ footer {
   div.gradient {
     height: 60px; } }
 @media only screen and (max-width: 600px) {
+  div.select, .chosen-container {
+    width: 162px !important; }
+
   .rdsocial {
     display: none; }
 
@@ -6724,6 +6758,9 @@ footer {
     margin-left: 10%;
     margin-top: -20px; } }
 @media only screen and (max-width: 480px) {
+  div.select, .chosen-container {
+    width: 137px !important; }
+
   .ctm-m > div {
     margin-right: 0px; }
 
