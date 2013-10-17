@@ -5691,7 +5691,7 @@ h2.size-60 {
   background: #000;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  height: 500px !important;
+  height: 600px !important;
   top: -22px;
   margin-bottom: -55px; }
 
@@ -5728,7 +5728,8 @@ h2.size-60 {
   font-size: 100px;
   color: #fff;
   font-family: 'BebasNeue';
-  margin-bottom: 0;
+  margin-bottom: 2%;
+  margin-top: 2%;
   z-index: 2;
   position: relative; }
 
@@ -5736,8 +5737,9 @@ h2.size-60 {
   font-size: 45px;
   color: #fff;
   font-family: 'BebasNeue';
-  margin-bottom: 0;
+  margin-bottom: 2%;
   width: 63%;
+  margin-top: 2%;
   margin-left: 20%;
   z-index: 9;
   position: relative; }
@@ -5806,7 +5808,7 @@ h2.size-60 {
   background: #C6244B; }
 
 .slide1 {
-  height: 500px;
+  height: 800px;
   background-image: url("/images/slide1.png");
   /*background-size: 100%;
   /*width: 25%;*/
@@ -5814,7 +5816,7 @@ h2.size-60 {
   background-position: center center; }
 
 .slide2 {
-  height: 500px;
+  height: 800px;
   background-image: url("/images/slide2.png");
   /*background-size: 100%;
   /*width: 25%;*/
@@ -5822,7 +5824,7 @@ h2.size-60 {
   background-position: center center; }
 
 .slide3 {
-  height: 500px;
+  height: 800px;
   background-image: url("/images/slide3.png");
   /*background-size: 100%;
   /*width: 25%;*/
@@ -6274,7 +6276,7 @@ h1 {
 .menu > li {
   display: inline-block;
   list-style-type: none;
-  padding: 35px 6.5% 0px 0px;
+  padding: 27px 8.5% 0px 0px;
   text-transform: uppercase; }
 
 .menu > li:last-child {
@@ -6292,8 +6294,8 @@ h1 {
 
 .redss {
   float: right;
-  width: 105px;
-  margin-top: 40px; }
+  width: 20%;
+  margin-top: 32px; }
 
 .redss div {
   display: inline-table; }
@@ -6446,7 +6448,7 @@ div.select:last-child {
   background-position: 0 0; }
 
 .facebook-h {
-  margin-right: 8px;
+  margin-right: 22px;
   width: 8px;
   height: 13px;
   background-position: -15px -37px; }
@@ -6501,7 +6503,7 @@ div.select:last-child {
   background-position: -23px 0; }
 
 .twiiter-h {
-  margin-right: 8px;
+  margin-right: 22px;
   width: 15px;
   height: 13px;
   background-position: -15px -23px; }
@@ -6770,7 +6772,8 @@ footer {
     font-size: 28px; }
 
   .redss {
-    margin-top: 17px; }
+    margin-top: 17px;
+    width: 50%; }
 
   .redss a {
     margin-right: 15px; }
@@ -6795,6 +6798,9 @@ footer {
     margin-left: 10%;
     margin-top: -20px; } }
 @media only screen and (max-width: 480px) {
+  .redss {
+    width: 65%; }
+
   h1.main-title {
     font-size: 33px;
     padding: 31px 0 27px; }
@@ -6851,6 +6857,9 @@ footer {
   .ctm-m > div {
     font-size: 13px; } }
 @media only screen and (max-width: 320px) {
+  .redss {
+    width: 100%; }
+
   .top-ctn {
     display: none; }
 
@@ -6867,6 +6876,9 @@ footer {
     margin-right: 7px; } }
 .rdsocial a {
   display: inline-block; }
+
+.row {
+  max-width: 1180px !important; }
 
 /* Grid HTML Classes */
 .row {
