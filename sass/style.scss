@@ -37,6 +37,10 @@ font-family: 'BebasNeue';
 	color: #c62426;
 	border-bottom: 2px solid #c62426;
 }
+.current_active a{
+	color: #c62426 !important;
+	border-bottom: 2px solid #c62426;
+}
 
 .redss {
 float: right;
@@ -242,9 +246,10 @@ footer{
 .menu-footer li{
 	margin-bottom: 5px;
 }
-.menu-footer li a:hover, a.mailref:hover{
+.menu-footer li a:hover, a.mailref:hover, .ctn-spons a{
 	color:#c62426;
 }
+
 .shared  a  {
 display: inline-block;
 margin-left: 10px;
@@ -319,6 +324,52 @@ z-index: 9;
 padding-bottom: 75px;
 max-width:1300px;
 }
+.rdsocial a{
+	display: inline-block;
+}
+.row{
+	 max-width: 1180px !important ;
+}
+[class*="column"] + [class*="column"]:last-child{
+	float:left !important;
+}
+h3.sponsors{
+	font-family:'BebasNeue';
+	font-size: 24px;
+	font-weight:100;
+}
+hr.divs{
+	
+margin: 65px 0;
+width: 100%;
+
+}
+.ctn-spons a:hover {
+	color: #C6244B;
+}
+.cntr{
+	text-align:center;
+}
+.rght
+{
+	text-align: right;
+}
+.fblkspons{
+padding-top: 75px;	
+text-align: center;
+}
+
+.fblkspons img{
+	padding-bottom: 60px !important;
+
+}
+.mtim{
+	margin-top:75px;
+}
+.mtiml{
+	margin-top:58px;
+}
+
 
 @media only screen and (max-width : 1299px) {
 	.page{
@@ -375,6 +426,13 @@ div.gradient{
  }
 
  @media only screen and (max-width : 600px) {
+ 	.rght{
+ 		text-align: center !important;
+ 	}
+ 	.cntr img, .rght img{
+		margin-bottom: 35px;
+		
+ 	}
  	.top-ctn{
  		right: 0px;
  	}
@@ -414,6 +472,16 @@ margin-top:-20px;
 }
 
 @media only screen and (max-width : 480px) {
+	.fblkspons {
+padding-top: 40px;
+text-align: center;
+}
+.mtim {
+margin-top: 0px;
+}
+.mtiml {
+margin-top: 46px;
+}
 	.redss{
  		 		width: 65%;
  	}
@@ -498,12 +566,5 @@ header{
 	margin-right: 7px;
 }
 
-}
-
-.rdsocial a{
-	display: inline-block;
-}
-.row{
-	 max-width: 1180px !important ;
 }
 

@@ -1,0 +1,189 @@
+---
+title: Partners
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+---
+{% extends parent %}
+
+{% block main %}
+<div class="gradiente">  </div>
+<section class="page">
+	<section class="row">
+    {% editable_text title-partners %}
+      <h1 class="main-title">Global Startup Battle wouldn't be possible <br/>
+        without our amazing sponsors</h1>
+  {% endeditable_text %}
+      </section>
+      <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns cntr"> 
+      		<a href="#"><img src="{{ 'google.png' | theme_image_url }}" alt="Google Entrepreneurs" /></a>
+      	</div>
+      	{% editable_text Google-for-Enterpreneurs %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">Google for Entrepreneurs</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat <a href="#">dasdasdasadssad</a> incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur eaque illum doloremque dolorem at voluptatum aperiam nam optio eos commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, iste nam sint a enim. Saepe, magni, rem, adipisci dicta quasi veniam nulla porro assumenda eligendi dolorem perferendis eos incidunt odit.</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, placeat, provident, similique ipsam maiores voluptatem totam id eaque eveniet excepturi cumque enim. Aliquam, vero nam ipsum harum perspiciatis qui voluptatem.</p>
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-10 columns"><hr class="divs" /></div>
+      </div>
+       <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns cntr"> 
+      		<a href="#"><img src="{{ 'coca-cola.png' | theme_image_url }}" alt="Coca Cola" /></a>
+      	</div>
+      	{% editable_text Coca-Cola-Company %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">Coca Cola Company</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur eaque illum doloremque dolorem at voluptatum aperiam nam optio eos commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, iste nam sint a enim. Saepe, magni, rem, adipisci dicta quasi veniam nulla porro assumenda eligendi dolorem perferendis eos incidunt odit.</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, placeat, provident, similique ipsam maiores voluptatem totam id eaque eveniet excepturi cumque enim. Aliquam, vero nam ipsum harum perspiciatis qui voluptatem.</p>
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-10 columns"><hr class="divs" /></div>
+      </div>
+        <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns cntr"> 
+      		<a href="#"> <img src="{{ 'amazon.png' | theme_image_url }}" alt="Amazon" /> </a>
+      	</div>
+      	{% editable_text Amazon-Web-Services %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">Amazon Web Services</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur eaque illum doloremque dolorem at voluptatum aperiam nam optio eos commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, iste nam sint a enim. Saepe, magni, rem, adipisci dicta quasi veniam nulla porro assumenda eligendi dolorem perferendis eos incidunt odit.</p>
+      		
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-10 columns"><hr class="divs" /></div>
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns rght"> 
+      		<a href="#">  <img src="{{ 'co.png' | theme_image_url }}" alt="StartUp Battle" /> </a>
+      	</div>
+      	{% editable_text CO %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">.CO</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur. </p>
+      		
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-10 columns"><hr class="divs" /></div>
+      </div>
+        <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns "> 
+      		<a href="#"> <img src="{{ 'microsoft.png' | theme_image_url }}" alt="Microsoft" /> </a>
+      	</div>
+      	{% editable_text Microsoft %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">Microsoft</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur. </p>
+      		
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-10 columns"><hr class="divs" /></div>
+      </div>
+       <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns cntr"> 
+      		<a href="#">  <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="Big Commerce" /> </a>
+      	</div>
+      	{% editable_text Big-Commerce %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">Big Commerce</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur. </p>
+      		
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-10 columns"><hr class="divs" /></div>
+      </div>
+       <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns cntr"> 
+      		<a href="#">   <img src="{{ 'sprint.png' | theme_image_url }}" alt="Sprint" /> </a>
+      	</div>
+      	{% editable_text Sprint %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">Sprint</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur. </p>
+      		
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-10 columns"><hr class="divs" /></div>
+      </div>
+      <div class="row">
+      	<div class="large-offset-1 large-3 medium-4 small-12 columns cntr"> 
+      		<a href="#">   <img src="{{ 'globlaenter.png' | theme_image_url }}" alt="Global" /> </a>
+      	</div>
+      	{% editable_text Global-Entrepreneurship-Week %}
+      	<div class="large-7 medium-8 small-12 columns">
+      		<h3 class="sponsors">Global Entrepreneurship Week</h3>
+      		<div class="ctn-spons">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, earum, harum, ea tempora eaque similique error cumque dolorum totam rerum cupiditate id quasi quaerat incidunt numquam quam magni non dolor?</p>
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, assumenda, quam quasi expedita consequuntur dolorum reiciendis consectetur error aspernatur. </p>
+      		
+      		</div>
+      	</div>
+      	{% endeditable_text %}
+   
+      </div>
+      
+
+      
+
+</section>
+
+{% endblock %}

@@ -2,14 +2,17 @@
 	<div class="row cntn-menu">
 		<div class="large-3 small-5 medium-3 columns"><a href="/"><img src="{{ 'logo.png' | theme_image_url }}" alt="StartUp Battle" /></a></div>
 		<div class="large-offset-0  large-9 small-7 medium-ofsset-0 medium-9  columns">
+
 			<ul class="menu">
+			{% nav site, no_wrapper: true,  id: 'main-nav', class: 'menu', active_class: 'current_active', foundation : true %}
+			<!--
 				<li class="item-1"><a href="/cities">Cities</a></li>
 				<li class="item-2"><a href="">Enter</a></li>
 				<li class="item-3"><a href="">Prizes</a></li>
 				<li class="item-4"><a href="">Partners</a></li>
 				<li class="item-5"><a href="">Intel</a></li>
 				<li class="item-6"><a href="">Contact</a></li>
-			</ul>
+			--></ul>
 			<div class="redss" >
 				<a href="#"><div class="twiiter-h sprites-social"></div></a>
 			<a href="#"><div class="facebook-h sprites-social"></div></a>

@@ -87,7 +87,11 @@ $(document).ready(function() {
         autoSize    : false,
         closeClick  : false,
         openEffect  : 'none',
-        closeEffect : 'none'
+        closeEffect : 'none',
+        type: "iframe",
+    iframe : {
+      preload: false
+    }
     });
      $('.boton-f').bind('click', function(){
         validarEmail($('.inpt-red').val());
