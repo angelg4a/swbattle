@@ -369,7 +369,161 @@ text-align: center;
 .mtiml{
 	margin-top:58px;
 }
+.sticky{
+    color: #FFFFFF;
+float: right;
+position: fixed;
+right: 1%;
+text-align: center;
+top: 40%;
+width: 55px;
+cursor: pointer;
+background: #3d3d3d;
+font-size: 12px;
+z-index: 999;
 
+  }
+
+  .frststicky{
+    padding-bottom: 8px; width: 55px; height:55px; overflow:hidden; padding-top:5px;
+
+  }
+  .scndsticky{
+    background: #2d2d2d; padding-bottom: 8px; width: 55px; height:55px;
+  }
+    .frststicky:hover, .scndsticky:hover{
+   background: #c62426;
+  }
+
+.primary-title{
+	color: #c62426;
+text-transform: uppercase;
+padding: 5px 0px 10px 0px;
+text-align: center;
+font-size: 44px;
+line-height: 1;
+font-weight: 500;
+margin: 0px !important;
+}
+	.secondary-title{
+		font-family: 'BebasNeue';
+		text-align: center;
+		font-weight: 100;
+	}
+	.sprites-circle {margin: 0 10%; background-image: url('/images/sprites/circle-sprite.png'); background-color: transparent; background-repeat: no-repeat; }
+.champion-circle {margin: 0 auto; width: 167px; height: 115px; background-position: 0 -404px; }
+.cloud-circle {margin: 0 auto; width: 171px; height: 99px; background-position: 0 -520px; }
+.commerce-circle {margin: 0 auto; width: 180px; height: 95px; background-position: -404px -127px; }
+.domain-circle { margin: 0 auto;width: 177px; height: 115px; background-position: -202px -305px; }
+.enter-circle:hover { width: 201px; height: 201px; background-position: 0 0; }
+.enter-circle { width: 201px; height: 201px; background-position: 0 -202px; }
+.pin:hover { width: 201px; height: 201px; background-position: -172px -421px; }
+.pin { width: 201px; height: 201px; background-position: -374px -425px; }
+.platform-circle {margin: 0 auto; width: 186px; height: 102px; background-position: -202px -202px; }
+.social:hover {  width: 201px; height: 201px; background-position: -389px -223px; }
+.social {   width: 201px; height: 201px; background-position: -202px 0; }
+.woman-circle {margin: 0 auto; width: 86px; height: 126px; background-position: -404px 0; }
+.customgrd{
+	width: 23.3333333%;
+	margin: 25px 5%;
+	float: left;
+}
+.step{
+	font-size: 72px;
+font-family: 'BebasNeue';
+color: #c62426;
+margin: 20px 10px;
+float: left;
+}
+.title-step{
+	font-family: 'BebasNeue';
+font-size: 24px;
+position: relative;
+top: 31px;
+}
+.description{
+	clear: both;
+}
+.divisor{
+	position: relative;
+top: -50px;
+}
+.divisor hr{
+border: solid black;
+border-width: 1px 0 0;
+}
+.subt-circle{
+	font-family: 'BebasNeue';
+	font-weight: 100;
+	text-align: center;
+
+}
+.m-inf{
+display: block;
+text-align: center;
+padding-top: 7px;
+width: 100%;
+}
+a.m-inf:hover{
+color: white;
+}
+.icn-cnt{
+	min-height: 126px;
+}
+.page-circle{
+	margin: -51px auto;
+background: white;
+position: relative;
+z-index: 9;
+
+max-width: 1300px;
+}
+.circles-contnt{
+	padding-bottom: 70px;
+}
+.custmtop{
+	margin-top: 80px;
+}
+.sbmenu{
+	list-style: none;
+	margin-top: 45px;
+margin-left: 70px;
+margin-bottom: 0px;
+}
+.sbmenu li{
+display: inline-block;
+width: 100px;
+text-align: center;
+margin-right: 60px;
+
+}
+.sbmenu li a{
+color: black;
+font-weight: 600;
+}
+.sbmenu li a.active{
+color: #c62426;
+}
+.sbmenu li a:hover{
+color: #c62426;
+}
+.rdsor{
+	border: solid #c62426;
+border-width: 5px 0 0;
+width: 100%;
+margin: 0;
+margin-bottom: 55px;
+
+}
+.triangulo_sup {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #c62426;
+    margin: 0 auto;
+    margin-top: 15px;
+}	
 
 @media only screen and (max-width : 1299px) {
 	.page{
@@ -387,6 +541,13 @@ text-align: center;
 }
 .banner h2{
 	font-size:60px;
+}
+}
+@media only screen and (max-width : 801px) {
+	.sbmenu li{margin-right: 25px;}
+.customgrd {
+width: 31.333333% !important;
+margin: 25px 1% !important;
 }
 }
 @media only screen and (max-width : 769px) {
@@ -424,8 +585,22 @@ div.gradient{
 }
 
  }
+@media only screen and (max-width : 620px) {
+.customgrd {
+width: 40% !important;
+margin: 25px 30% !important;
+float: inherit;
 
+}
+.sbmenu{
+	margin-left:0px; 
+}
+.sbmenu li{margin-right: 5px;}
+}
  @media only screen and (max-width : 600px) {
+ 	.sticky, .frststicky, .scndsticky{
+ 		display: none !important;
+ 	}
  	.rght{
  		text-align: center !important;
  	}
@@ -545,6 +720,13 @@ header{
     font-size: 13px;
     }
 
+.sbmenu li {
+width: 75px;
+}
+.sbmenu li a {
+font-size: 13px;
+}
+
 }
 @media only screen and (max-width : 320px) {
 	.redss{
@@ -564,6 +746,20 @@ header{
 }
 .pin , .playvideo, .share{
 	margin-right: 7px;
+}
+
+.triangulo_sup{
+	display: none;
+}
+.customgrd {
+width: 72% !important;
+margin: 25px 14% !important;
+float: inherit;
+
+}
+.sbmenu li {
+
+margin: 5px;
 }
 
 }

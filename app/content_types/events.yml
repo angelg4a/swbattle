@@ -8,7 +8,7 @@ slug: events
 description: A description of the content type for the editors
 
 # Default field (e.g title)
-label_field_name: s
+label_field_name: city
 
 # Order of entries
 order_by: manually # default: manually, also available: created_at or any field slug
@@ -27,13 +27,6 @@ order_by: manually # default: manually, also available: created_at or any field 
 
 # Describe each field. The name shoud always be an underscored string
 fields: 
-- s: # Name of the field
-    label: S
-    type: string
-    required: true
-    hint: A description of the field for the editors
-    localized: false
-
 - city: # Name of the field
     label: City
     type: string
@@ -41,8 +34,23 @@ fields:
     hint: A description of the field for the editors
     localized: false
 
+# - country: # Name of the field
+#     label: Country
+#     type: select
+#     select_options: ["UNITED STATES", "EUROPE", "AUSTRALIA AND NEW ZEALAND", "RUSSIA", "ASIA", "CANADA", "LATIN AMERICA & THE CARIBBEAN", "MIDDLE EAST & NORTH AFRICA", "SUB-SAHARAN AFRICA"]
+#     target: regions
+#     required: false
+#     hint: A description of the field for the editors
+#     localized: false
+
 - country: # Name of the field
     label: Country
+    type: belongs_to
+    target: regions
+    ui_enabled: false
+
+- url: # Name of the field
+    label: Url
     type: string
     required: false
     hint: A description of the field for the editors

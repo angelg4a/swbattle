@@ -2,7 +2,6 @@
 title: Cities
 published: true
 listed: true
-#position: 1
 ---
 
 {% extends parent %}
@@ -10,247 +9,259 @@ listed: true
 {% block 'main' %}
 <div class="gradiente">  </div>
 <section class="page">
+  <div class="sticky">
+    <div class="frststicky" >
+        <div class="sprites-social top"></div>
+        TOP
+    </div>
+        <div class="scndsticky">
+        <div class="sprites-social share" style="margin: 8px 30% !important;" ></div>
+        SHARE
+        </div>
+  </div>
     <section class="row">
     {% editable_text title-cities %}
       <h1 class="main-title">Participate with thousands of entrepreneurs across the globe <br/>
         During two of the most innovative weekends in November</h1>
-  {% endeditable_text %}
+    {% endeditable_text %}
       </section>
+      
       <div class="row slct-content">
         <div class="large-offset-1 large-10"> 
           <div class="select">
             <p>City Search:</p>
-            <select name="sasa  " id="city" class="chosen-select">
+            <select name="sasa" id="city" class="chosen-select" onchange="window.location.href=this.value;">
               <option value="">Type city name</option>
-              <option value="">Arkansas</option>
-              <option value="">Austin</option>
-              <option value="">Boise</option>
-              <option value="">Buffalo</option>
-              <option value="">Dallas</option>
+              {% for event in contents.events %}
+                  <option value="{{event.url}}">{{ event.city }}</option>
+                  {% assign date_show = '' %}
+              {% endfor %}
             </select>
           </div>
           <div class="select">
             <p>Filter by:</p>
             <select name="sasa  " id="country" class="chosen-select">
               <option value="">Select a region</option>
-              <option value="">United States</option>
-              <option value="">Europe</option>
-              <option value="">Australia and New Zealand</option>
+                {% for region in contents.regions %}
+                  <option value="{{region.acronym}}">{{ region.country }}</option>
+                {% endfor %}
             </select>
           </div>
           <div class="select">
             <p><br /></p>
-            <select name="sasa  " id="date" class="chosen-select">
+            <select name="sasa" id="date" class="chosen-select">
               <option value="">Select a date range</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
+                {% for event in contents.events %}
+                  {% if date_show != event.date %}
+                      <option value="{{event.date || localized_date: '%d/%m/%Y'}}">{{ event.date || localized_date: '%d/%m/%Y' }}</option>
+                  {% endif %}
+                  {% assign date_show = event.date %}
+                {% endfor %}
             </select>
           </div>
         </div>
       </div>
-      <div class="row m-btm">
+      <div class="row m-btm" data-name="us">
         <div class="large-offset-2 large-8 columns">
           <div class=" cty-ttl">  
             <div class="sprites usa"></div> <div class="ctn-txt">UNITED STATES</div>
           </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Arkansas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Arkansas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Arkansas</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Austin</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Austin</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Austin</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Boise</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Boise</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Boise</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Buffalo</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Buffalo</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Buffalo</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Chilicoth, OH</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Chilicoth, OH</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Chilicoth, OH</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Dallas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Dallas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Dallas</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Evansville</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Evansville</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Evansville</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Fredericksburg</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Fredericksburg</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Fredericksburg</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Harrisbug</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Harrisbug</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Harrisbug</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Hudson Valley</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Hudson Valley</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Hudson Valley</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Arkansas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Arkansas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Arkansas</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Austin</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Austin</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Austin</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Boise</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Boise</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Boise</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Buffalo</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Buffalo</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Buffalo</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Chilicoth, OH</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Chilicoth, OH</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Chilicoth, OH</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Dallas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Dallas</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Dallas</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Evansville</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Evansville</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Evansville</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Fredericksburg</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Fredericksburg</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Fredericksburg</span></div>
-          </div>
-
-
+           {% with_scope country: 'UNITED STATES' %}
+              {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                    
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
+            
         </div> 
       </div>
-      <div class="row m-btm"> 
+      <div class="row m-btm" data-name="eur"> 
         <div class="large-offset-2 large-8 columns">
           <div class=" cty-ttl">  
             <div class="sprites europe"></div> <div class="ctn-txt">EUROPE</div>
           </div>
 
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Aalborg</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Aalborg</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Aalborg</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Aarthus</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Aarthus</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Aarthus</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Amsterdam</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Amsterdam</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Amsterdam</span></div>
-          </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Athens</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Athens</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Athens</span></div>
-          </div>
-
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Barcelona</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Barcelona</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Barcelona</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Belgrade</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Belgrade</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Belgrade</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Bergen</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Bergen</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Bergen</span></div>
-          </div>
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Berlin</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Berlin</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Berlin</span></div>
-          </div>
-
+          {% with_scope country: 'EUROPE' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
 
         </div>
       </div>
-      <div class="row m-btm"> 
+      <div class="row m-btm" data-name="aus"> 
         <div class="large-offset-2 large-8 columns">
           <div class=" cty-ttl"> 
             <div class="sprites aus"></div> <div class="ctn-txt">AUSTRALIA AND NEW ZEALAND</div> 
           </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Melboume</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>New Zealand</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Sydney</span></div>
-          </div>
+          {% with_scope country: 'AUSTRALIA AND NEW ZEALAND' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
 
         </div>
       </div>
-      <div class="row m-btm"> 
+      <div class="row m-btm" data-name="rus"> 
         <div class="large-offset-2 large-8 columns">
           <div class=" cty-ttl">  
             <div class="sprites rus"></div> <div class="ctn-txt">RUSSIA</div> 
           </div>
-
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Moscow</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Saint-Petersburg</span></div>
-            <div class="large-4 medium-4 small-4 columns"></div>
-          </div>
+          {% with_scope country: 'RUSSIA' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
 
         </div>
       </div>
-      <div class="row m-btm"> 
+      <div class="row m-btm" data-name="as"> 
         <div class="large-offset-2 large-8 columns">
           <div class=" cty-ttl">  
-            <div class="sprites asia"></div> <div class="ctn-txt">ASIA</div> 
+            <div class="sprites asia"></div> <div class="ctn-txt" data-name="as">ASIA</div> 
           </div>
+            {% with_scope country: 'ASIA' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
 
-          <div class="row cty">
-            <div class="large-4 medium-4 small-4 columns cty-ft"><span>Melboume</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>New Zealand</span></div>
-            <div class="large-4 medium-4 small-4 columns"><span>Sydney</span></div>
+        </div>
+      </div>
+
+      <div class="row m-btm" data-name="can"> 
+        <div class="large-offset-2 large-8 columns">
+          <div class=" cty-ttl">  
+            <div class="sprites canada"></div> <div class="ctn-txt" data-name="as">CANADA</div> 
           </div>
+            {% with_scope country: 'CANADA' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                   <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
+
+        </div>
+      </div>
+ 
+      <div class="row m-btm" data-name="lac"> 
+        <div class="large-offset-2 large-8 columns">
+          <div class=" cty-ttl">  
+            <div class="sprites lat"></div> <div class="ctn-txt" data-name="as">LATIN AMERICA & THE CARIBBEAN</div> 
+          </div>
+            {% with_scope country: 'LATIN AMERICA & THE CARIBBEAN' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
+
+        </div>
+      </div>
+
+      <div class="row m-btm" data-name="mena"> 
+        <div class="large-offset-2 large-8 columns">
+          <div class=" cty-ttl">  
+            <div class="sprites sout"></div> <div class="ctn-txt" data-name="as">MIDDLE EAST & NORTH AFRICA</div> 
+          </div>
+            {% with_scope country: 'MIDDLE EAST & NORTH AFRICA' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
+
+        </div>
+      </div>
+
+      <div class="row m-btm" data-name="ssa"> 
+        <div class="large-offset-2 large-8 columns">
+          <div class=" cty-ttl">  
+            <div class="sprites afr"></div> <div class="ctn-txt" data-name="as">SUB-SAHARAN AFRICA</div> 
+          </div>
+            {% with_scope country: 'SUB-SAHARAN AFRICA' %}
+            {% assign count = '1' %}
+                {% for event in contents.events %}
+                  {% if count == '1' %} <div class="row cty"> {% endif %}
+                    <div class="large-4 medium-4 small-4 columns cty-ft" data-name="{{ event.city }}">
+                      <span>
+                        <a class="cty-url" href="{{event.url}}">{{ event.city }}</a>
+                      </span>
+                      <input class="cty-date" type="hidden" value="{{event.date || localized_date: '%d/%m/%Y'}}">
+                    </div>
+                  {% if count == '3' or forloop.length == forloop.index %} </div> {% assign count = '0' %} {% endif %}
+                  {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                {% endfor %}
+            {% endwith_scope %}
 
         </div>
       </div>

@@ -1,24 +1,109 @@
-- "Sample 1":
-    city: "Usa-aaa"
-    country: "USA"
-    date: 2013/40/15 # YYYY/MM/DD
+- "Arkansas":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/15 # YYYY/MM/DD
+ 
+- "Austin":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/15 # YYYY/MM/DD
 
-- "Sample 2":
-    city: "usa-aa"
-    country: "USA"
-    date: 2013/40/15 # YYYY/MM/DD
+- "Boise":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/15 # YYYY/MM/DD
 
-- "Sample 3":
-    city: "Minus eius consequatur architecto at ea laudantium qui."
-    country: "EUR"
-    date: 2013/40/15 # YYYY/MM/DD
+- "Bufalo":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/16 # YYYY/MM/DD
 
-- "Sample 4":
-    city: "Id sed doloribus ut dolores."
-    country: "AUS"
-    date: 2013/40/15 # YYYY/MM/DD
+- "Chilicoth, OH":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/16 # YYYY/MM/DD
 
-- "Sample 5":
-    city: "usa-a"
-    country: "USA"
-    date: 2013/40/15 # YYYY/MM/DD
+- "Dallas":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/17 # YYYY/MM/DD
+
+- "Evansville":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/18 # YYYY/MM/DD
+
+- "Fredericksburg":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/18 # YYYY/MM/DD
+
+- "Harrisbug":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/18 # YYYY/MM/DD
+
+- "Hudson Valley":
+    country: UNITED STATES
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Aalborg":
+    country: EUROPE
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Aarthus":
+    country: EUROPE
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Athens":
+    country: EUROPE
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Barcelona":
+    country: EUROPE
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Belgrade":
+    country: EUROPE
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Bergen":
+    country: EUROPE
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Berlin":
+    country: EUROPE
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Melboume":
+    country: AUSTRALIA AND NEW ZEALAND
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "New Zealand":
+    country: AUSTRALIA AND NEW ZEALAND
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Sydney":
+    country: AUSTRALIA AND NEW ZEALAND
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Moscow":
+    country: RUSSIA
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD
+
+- "Saint-Petersburg":
+    country: RUSSIA
+    url: "http://www.google.com.mx"
+    date: 2013/11/19 # YYYY/MM/DD

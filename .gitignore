@@ -1,0 +1,4 @@
+log
+.sass-cache
+config/deploy.yml
+*.json

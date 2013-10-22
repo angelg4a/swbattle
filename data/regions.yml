@@ -1,0 +1,26 @@
+- "UNITED STATES":
+    acronym: "us"
+
+- "EUROPE":
+    acronym: "eur"
+
+- "AUSTRALIA AND NEW ZEALAND":
+    acronym: "aus"
+
+- "RUSSIA":
+    acronym: "rus"
+
+- "ASIA":
+    acronym: "as"
+ 
+- "CANADA":
+    acronym: "can"
+
+- "LATIN AMERICA & THE CARIBBEAN":
+    acronym: "lac"
+
+- "MIDDLE EAST & NORTH AFRICA":
+    acronym: "mena"
+
+- "SUB-SAHARAN AFRICA":
+    acronym: "ssa"

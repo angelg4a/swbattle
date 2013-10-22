@@ -1,6 +1,6 @@
 development:
   host: localhost:8080
-  email: mas@g4all.mx
+  email: ovc@g4all.mx
   password: 12345678
   # api_key: <your api key here>
 production:
@@ -12,3 +12,7 @@ hosting:
   host: gsb-cms.locomotivehosting.com
   api_key: 9b2fb990c1c70243cf38088460744d18c74118ea
   ssl: true
+# hosting:
+#   host: gsbattle.locomotivehosting.com
+#   api_key: a4b43756c4a638bb611364ae14635d9fa1cf57a5
+#   ssl: true

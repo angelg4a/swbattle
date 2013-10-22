@@ -1,344 +1,43 @@
-[0;31;49m      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073550-23827-8766/chosen-sprite_2x.png'
-[0m
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073551-23830-2088/arrows.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073552-23830-4249/amazon.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073576-23830-4036/empresas.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073586-23827-0742/slide3.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073613-23824-4786/slide2.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073633-23851-3547/bigcommerce.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073634-23830-0073/sprint.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073635-23851-1871/cities.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073636-23827-0054/blank.gif'
-[0;31;49m      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073673-23827-1942/fancybox_loading_2x.gif'
-[0m
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382073675-23851-9187/fancybox_sprite.png'
-[0;31;49m      local_path => is already taken
-[0m
-Started GET "/" at 2013-10-18 00:33:07 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.9ms
+stack level too deep
+	(eval):2
 
 
-* Reloaded "pages", "snippets" at 2013-10-18 00:33:48 -0500
-Started GET "/" at 2013-10-18 00:33:52 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 10.1ms
+stack level too deep
+	(eval):2
 
 
-* Reloaded "pages", "snippets" at 2013-10-18 00:38:02 -0500
-* Reloaded "pages", "snippets" at 2013-10-18 00:39:08 -0500
-Started GET "/" at 2013-10-18 00:39:53 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.9ms
+undefined method `name' for nil:NilClass
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/models/content_entry.rb:337:in `localized_dynamic_attribute_value'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/models/content_type.rb:154:in `block in find_entries_by'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/models/content_type.rb:153:in `each'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/models/content_type.rb:153:in `find_all'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/models/content_type.rb:153:in `find_entries_by'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/models/content_entry.rb:127:in `dynamic_getter'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:46:in `block (4 levels) in fetch_from_content_entries'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:45:in `each'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:45:in `block (3 levels) in fetch_from_content_entries'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter.rb:97:in `with_locale'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:43:in `block (2 levels) in fetch_from_content_entries'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:42:in `each'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:42:in `block in fetch_from_content_entries'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:41:in `each'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:41:in `fetch_from_content_entries'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/file_system/content_assets_reader.rb:17:in `read'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/runner.rb:76:in `block (2 levels) in build_mounting_point'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/runner.rb:73:in `each'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/runner.rb:73:in `block in build_mounting_point'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/runner.rb:70:in `tap'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/runner.rb:70:in `build_mounting_point'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_mounter-1.2.7/lib/locomotive/mounter/reader/runner.rb:29:in `run!'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_wagon-1.2.2/lib/locomotive/wagon.rb:161:in `require_mounter'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_wagon-1.2.2/lib/locomotive/wagon.rb:59:in `push'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_wagon-1.2.2/lib/locomotive/wagon/cli.rb:192:in `push'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@global/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@global/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@global/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@global/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/gems/locomotivecms_wagon-1.2.2/bin/wagon:9:in `<top (required)>'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/bin/wagon:23:in `load'
+	/home/vagrant/.rvm/gems/ruby-1.9.3-p448@gsb-cms-wagon/bin/wagon:23:in `<main>'
 
 
-Started GET "/" at 2013-10-18 00:39:58 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 9.4ms
-
-
-* Reloaded "pages", "snippets" at 2013-10-18 00:46:06 -0500
-Started GET "/" at 2013-10-18 00:46:27 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.8ms
-
-
-* Reloaded "pages", "snippets" at 2013-10-18 00:46:50 -0500
-Started GET "/" at 2013-10-18 00:46:57 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 10.2ms
-
-
-* Reloaded "pages", "snippets" at 2013-10-18 00:49:20 -0500
-Started GET "/" at 2013-10-18 00:49:29 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 8.3ms
-
-
-Started GET "/" at 2013-10-18 00:50:01 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 5.4ms
-
-
-Started GET "/" at 2013-10-18 00:50:12 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 7.5ms
-
-
-Started GET "/" at 2013-10-18 00:50:12 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 52.3ms
-
-
-Started GET "/" at 2013-10-18 00:50:12 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 6.5ms
-
-
-Started GET "/" at 2013-10-18 00:50:12 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.6ms
-
-
-Started GET "/" at 2013-10-18 00:50:12 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 5.7ms
-
-
-Started GET "/" at 2013-10-18 00:50:12 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 5.4ms
-
-
-Started GET "/" at 2013-10-18 00:54:06 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.7ms
-
-
-Started GET "/" at 2013-10-18 00:54:13 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 6.5ms
-
-
-Started GET "/" at 2013-10-18 00:54:13 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 12.0ms
-
-
-Started GET "/" at 2013-10-18 00:54:13 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 26.6ms
-
-
-Started GET "/" at 2013-10-18 00:54:13 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 6.5ms
-
-
-Started GET "/" at 2013-10-18 00:54:13 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.6ms
-
-
-Started GET "/" at 2013-10-18 00:54:13 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.9ms
-
-
-Started GET "/cities" at 2013-10-18 00:54:40 -0500
-Detecting locale EN
-Found page "Cities" [cities]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 8.4ms
-
-
-Started GET "/partners" at 2013-10-18 00:54:46 -0500
-Detecting locale EN
-Found page "Partners" [partners]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 9.4ms
-
-
-Started GET "/enter" at 2013-10-18 00:54:57 -0500
-Detecting locale EN
-Found page "Enter" [enter]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 7.2ms
-
-
-Started GET "/contact" at 2013-10-18 00:54:58 -0500
-Detecting locale EN
-Found page "Contact" [contact]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 7.8ms
-
-
-Started GET "/partners" at 2013-10-18 00:55:00 -0500
-Detecting locale EN
-Found page "Partners" [partners]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 9.5ms
-
-
-Started GET "/intel" at 2013-10-18 00:55:02 -0500
-Detecting locale EN
-Found page "Intel" [intel]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 4.1ms
-
-
-Started GET "/prizes" at 2013-10-18 00:55:03 -0500
-Detecting locale EN
-Found page "Prizes" [prizes]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 6.8ms
-
-
-Started GET "/prizes" at 2013-10-18 00:55:05 -0500
-Detecting locale EN
-Found page "Prizes" [prizes]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 8.0ms
-
-
-Started GET "/enter" at 2013-10-18 00:55:11 -0500
-Detecting locale EN
-Found page "Enter" [enter]
-  Rendered snippet header
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 8.0ms
-
-
-Started GET "/" at 2013-10-18 00:55:13 -0500
-Detecting locale EN
-Found page "Home page" [index]
-  Rendered snippet header
-  Rendered snippet events
-  Rendered snippet footer
-  Rendered liquid page template
-Completed 200 OK in 6.3ms
-
-
-      editable_elements => is invalid
-[0;31;49m      local_path => is already taken
-[0m
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075648-23855-9629/amazon.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075669-23855-8670/stats.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075671-23851-4630/cities.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075674-23827-6044/empresas.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075685-23851-1145/microsoft.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075718-23851-7905/slide2.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075738-23855-4950/co.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075739-23851-5822/logo.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075741-23830-9241/globlaenter.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075742-23827-4645/bigcommerce.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075745-23855-1034/blank.gif'
-[0;31;49m      local_path => is already taken
-[0m
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075795-23830-8806/fancybox_sprite.png'
-[0;31;49m      local_path => is already taken
-[0m
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075798-23855-6189/close.png'
-      error => Cannot allocate memory - /usr/bin/identify '/u/apps/hosting/releases/20131010134631/tmp/uploads/1382075799-23827-9255/google.png'
