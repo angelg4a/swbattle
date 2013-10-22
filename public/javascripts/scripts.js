@@ -31,11 +31,8 @@ $(document).ready(function(){
         $window = $(window);
         $window.scroll(function() {
         	if (($(window).scrollTop()>=top_menu)&&(open)){
-
         		$('#menu-second').addClass('fixed').slideDown('600').height(50);
-
         		open=false;
-
         	}
         	if (($(window).scrollTop()<top_menu)&& (!open)){
         		$('#menu-second').removeClass('fixed').height(1);
@@ -50,12 +47,10 @@ $(document).ready(function(){
         $window.scroll(function() {
         	if ($(window).scrollTop()>(top-100)) {
             var coords = '0% '+ (($(this).scrollTop()-(top-95))/ 6)  + '%';
- 
             // Move the background
             $bgobj.css({ backgroundPosition: coords });
         }
-
-        }); 
+        });
     });
 
     $(".video").click(function() {
@@ -162,7 +157,6 @@ $(document).ready(function(){
 function validarEmail( email ) {
     expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if ( !expr.test(email) ){
-        // alert("Error: email is invalid");
         $('.error-email').slideDown();
     }else{
         $('.error-email').slideUp();

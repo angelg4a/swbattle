@@ -25,17 +25,27 @@ published: true
 {% block main %}
 <div class="gradiente">  </div>
 <section class="page-circle">
+  <div class="sticky">
+    <div class="frststicky" >
+        <div class="sprites-social top"></div>
+        TOP
+    </div>
+        <div class="scndsticky">
+        <div class="sprites-social share" style="margin: 8px 30% !important;" ></div>
+        SHARE
+        </div>
+  </div>
 <div class="row">
-	<div class="large-12 medium-12 small-12 columns">
-		<ul class="sbmenu">
-			<li><a href="" class="active">WHAT IS A CIRCLE?</a><div class="triangulo_sup"></div></li>
-			<li><a href="">CHAMPION'S CIRCLE</a></li>
-			<li><a href="">WOMEN'S CIRCLE</a></li>
-			<li><a href="">CLOUD CIRCLE</a></li>
-			<li><a href="">DOMAIN CIRCLE</a></li>
-		</ul>
-		<hr class="rdsor" />
-	</div>
+  <div class="large-12 medium-12 small-12 columns">
+    <ul class="sbmenu">
+      <li><a href="" class="active">WHAT IS A CIRCLE?</a><div class="triangulo_sup"></div></li>
+      <li><a href="">CHAMPION'S CIRCLE</a></li>
+      <li><a href="">WOMEN'S CIRCLE</a></li>
+      <li><a href="">CLOUD CIRCLE</a></li>
+      <li><a href="">DOMAIN CIRCLE</a></li>
+    </ul>
+    <hr class="rdsor" />
+  </div>
 </div>
 <section class="row">
   <h1 class="primary-title">What is a Circle?</h1>
@@ -46,22 +56,22 @@ published: true
  </section>
 <div class="row">
    <div class="customgrd">
-   		<div class="sprites-circle pin"></div>
-      	<div><span class="step">01</span><span class="title-step">Find a Local Event to Attend</span></div>
+      <div class="sprites-circle pin"></div>
+        <div><span class="step">01</span><span class="title-step">Find a Local Event to Attend</span></div>
         {% editable_text text-find-a-local-event %}
-   	   	<p class="description">Attend one of over 200+ GSB Startup Weekend events happening world wide during November 15 and November 22</p>
+        <p class="description">Attend one of over 200+ GSB Startup Weekend events happening world wide during November 15 and November 22</p>
         {% endeditable_text %}
    </div>
    <div class="customgrd">
-   		<div class="sprites-circle enter-circle"></div>
-   		<div><span class="step">02</span><span class="title-step">Select Circle(s) to Participe in</span></div>
+      <div class="sprites-circle enter-circle"></div>
+      <div><span class="step">02</span><span class="title-step">Select Circle(s) to Participe in</span></div>
       {% editable_text text-circle(s)-to-participe %}
         <p class="description">Review each circle's rules to see if your team is eligible to enter. Once ready, submit your entry to the circle(s) of your choise.</p>
       {% endeditable_text %}
    </div>
    <div class="customgrd">
-   		<div class="sprites-circle social"></div>
-   		<div><span class="step">03</span><span class="title-step">Compete and share your entry</span></div>
+      <div class="sprites-circle social"></div>
+      <div><span class="step">03</span><span class="title-step">Compete and share your entry</span></div>
       {% editable_text text-compete-and-share %}
         <p class="description">Once you've entered, share the link to your entry and compete for the most votes!</p>
       {% endeditable_text %}
@@ -82,60 +92,60 @@ published: true
 
 <div class="row">
  <div class="customgrd">
- 	<div class="icn-cnt">
- 		<div class="sprites-circle champion-circle"></div>
- 	</div>
-   		
-   		<div><h2 class="subt-circle">Champion's Circle</h2></div>
+  <div class="icn-cnt">
+    <div class="sprites-circle champion-circle"></div>
+  </div>
+      
+      <div><h2 class="subt-circle">Champion's Circle</h2></div>
       {% editable_text champions-circle %}
-   	  	<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
-   	  	<a class="boton m-inf bebas" href="">More Info</a> 
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
+        <a class="boton m-inf bebas" href="">More Info</a> 
       {% endeditable_text %}
    </div>
    <div class="customgrd">
-   		<div class="icn-cnt">
-   		<div class="sprites-circle woman-circle"></div>
-   		</div>
-   		<div><h2 class="subt-circle">Woman's Circle</h2></div>
-   	  	<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
-   	  	<a class="boton m-inf bebas" href="">More Info</a> 
+      <div class="icn-cnt">
+      <div class="sprites-circle woman-circle"></div>
+      </div>
+      <div><h2 class="subt-circle">Woman's Circle</h2></div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
+        <a class="boton m-inf bebas" href="">More Info</a> 
    </div>
    <div class="customgrd">
-   		<div class="icn-cnt">
-   		<div class="sprites-circle cloud-circle"></div>
-   		</div>
-   		<div><h2 class="subt-circle">Cloud Circle</h2></div>
-   	  	<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
-   	  	<a class="boton m-inf bebas" href="">More Info</a> 
-   </div>
-   <div class="customgrd custmtop">
-   		<div class="icn-cnt">
-   		<div class="sprites-circle domain-circle"></div>
-   		</div>
-   		<div><h2 class="subt-circle">Domain Circle</h2></div>
-   	  	<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
-   	  	<a class="boton m-inf bebas" href="">More Info</a> 
-   </div>
-   <div class="customgrd custmtop">
-   		<div class="icn-cnt">
-   		<div class="sprites-circle commerce-circle"></div>
-   		</div>
-   		<div><h2 class="subt-circle">Commerce Circle</h2></div>
+      <div class="icn-cnt">
+      <div class="sprites-circle cloud-circle"></div>
+      </div>
+      <div><h2 class="subt-circle">Cloud Circle</h2></div>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
-   	  	<a class="boton m-inf bebas" href="">More Info</a> 
+        <a class="boton m-inf bebas" href="">More Info</a> 
    </div>
    <div class="customgrd custmtop">
-   		<div class="icn-cnt">
-   		<div class="sprites-circle platform-circle"></div>
-   		</div>
-   		<div><h2 class="subt-circle">Platform Circle</h2></div>
+      <div class="icn-cnt">
+      <div class="sprites-circle domain-circle"></div>
+      </div>
+      <div><h2 class="subt-circle">Domain Circle</h2></div>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
-   	  	<a class="boton m-inf bebas" href="">More Info</a> 
+        <a class="boton m-inf bebas" href="">More Info</a> 
    </div>
-	
+   <div class="customgrd custmtop">
+      <div class="icn-cnt">
+      <div class="sprites-circle commerce-circle"></div>
+      </div>
+      <div><h2 class="subt-circle">Commerce Circle</h2></div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
+        <a class="boton m-inf bebas" href="">More Info</a> 
+   </div>
+   <div class="customgrd custmtop">
+      <div class="icn-cnt">
+      <div class="sprites-circle platform-circle"></div>
+      </div>
+      <div><h2 class="subt-circle">Platform Circle</h2></div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, itaque, quaerat, libero dolore voluptate enim ut obcaecati magni error tempora porro ipsa est rem magnam earum eaque assumenda eius. Molestias.</p>
+        <a class="boton m-inf bebas" href="">More Info</a> 
+   </div>
+  
 </div>
 
-	
+  
 </div>     
       
 
