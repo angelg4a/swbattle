@@ -8,7 +8,7 @@ listed: true
 published: true
 
 # position among sibling pages
-# position: 2
+position: 6
 
 # sets a redirection to the given url (301)
 # redirect_url: "<url to a page or to a remote url>"
@@ -23,11 +23,107 @@ published: true
 {% extends parent %}
 
 {% block main %}
-<div class="gradiente">  </div>
+<div class="gradiente"></div>
 <section class="page">
-	
-      
+{% include sticky %}
+<div class="height-top"></div>
+	<section class="row">
+		<div class="large-7 columns">
+			<h1 class="main-title contact">CONTACT US</h1>
+			{% editable_text contact-description %}
+				<p class="contact-description">
+					Have a question not answered by our <span> FAQ page </span> or having trouble with your entrey
+					submission? Feel free to contact us and we'll reach out to you as soon as we can.
+				</p>
+			{% endeditable_text %}
+			<form action="{{contents.customer_messages.public_submission_url}}" method="POST" id="form-contact">
+				{% csrf_param %}
+      			<input type="hidden" value="/" name="success_callback" />
+      			<input type="hidden" value="/contact" name="error_callback" />
+
+      			{% if customer_message.errors %}
+			        <p>The following errors occured:</p>
+			        <ul>
+			        {% for error in customer_message.errors %}
+			          <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
+			        {% endfor %}
+			        </ul>
+			    {% endif %}
+
+
+				<div class="section-form">
+					<div class="row">
+						<div class="large-6 medium-6 columns">
+							<label>NAME <span>*</span></label>
+							<input name="content[name]" id="name" type="text" class="input-contact" value="{{customer_message.name}}" />
+						</div>
+						<div class="large-6 medium-6 columns">
+							<label>EMAIL <span>*</span></label>
+							<input name="content[email]" type="text"  class="input-contact" value="{{customer_message.email}}" />
+						</div>
+					</div>
+				</div>
+				<div class="section-form">
+					<label>MESSAGE <span>*</span></label>
+					<textarea name="content[message]">{{customer_message.message}}</textarea>
+				</div>
+				<input type="submit" class="button-contact" value="SEND" />
+			</form>
+		</div>
+	     <div class="large-5 medium-12 columns">
+	     	<div class="line-gray"></div>
+	     	<div class="row">
+	     		<div class="large-12 medium-6 columns">
+			     	<div class="email">
+				     	<h2 class="sub-title right-title">EMAIL</h2>
+				     	<span class="contain-img-red">
+				     			<span class="social-red mail-red"></span>
+				     		</span>
+				     	<a href="mailto:gsb@startupweekend.org" class="redref">gsb@startupweekend.org</a>
+				     </div>
+				</div>
+				<div class="large-12 medium-6 columns">
+				     <div class="on-web">
+				     	<h2 class="sub-title right-title">ON THE WEB</h2>
+				     	<a href="https://twitter.com/startupbattle" class="redref">
+				     		<span class="contain-img-red">
+				     			<span class="social-red twitter"></span>
+				     		</span>
+				     		<span>@Startupbattle</span>
+				     	</a>
+				     	<a href="http://www.facebook.com/StartupBattle?ref=hl" class="redref">
+				     		<span class="contain-img-red">
+				     			<span class="social-red facebook"></span>
+				     		</span>
+				     		<span>/Startupbattle</span>
+				     	</a>
+				     	<a href="https://plus.google.com/103261302861931394322" class="redref">
+				     		<span class="contain-img-red">
+				     			<span class="social-red gplus"></span>
+				     		</span>
+				     		<span>/Startupweekend</span>
+				     	</a>
+				     </div>
+				</div>
+			</div>
+	     </div>
+	    
+      </section>
+      <section class="row">
+		<div class="large-7 columns">
+			<h1 class="main-title contact">SUCCESS</h1>
+			{% editable_text contact-success %}
+				<p class="contact-success">
+					Your message hass been succesfully sent. We'll be in touch shortly.
+				</p>
+				<p class="contact-success">
+					To read up on the latest Global Startup Battle news, check us out on <span> Twitter, Facebook, G+</span> or signup below.
+				</p>
+			{% endeditable_text %}
+		</div>
+	</section>
 
 </section>
 
 {% endblock %}
+

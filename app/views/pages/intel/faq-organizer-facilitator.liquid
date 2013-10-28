@@ -1,14 +1,14 @@
 ---
-title: Intel
+title: FAQ Organizer facilitator
 
 # true if the page is included in the menu
-listed: true
+#listed: true
 
 # true if the page is published
 published: true
 
 # position among sibling pages
-position: 5
+#position: 5
 
 # sets a redirection to the given url (301)
 # redirect_url: "<url to a page or to a remote url>"
@@ -31,8 +31,8 @@ position: 5
   <div class="large-12 medium-12 small-12 columns">
     <ul class="sbmenu">
       
-      <li><a href="/intel" class="active">FAQ ATTENDEES</a><div class="triangulo_sup"></div></li>
-      <li class="special-limenu"><a href="/intel/faq-organizer-facilitator">FAQ ORGANIZER/FACILITATOR</a></li>
+      <li><a href="/intel" >FAQ ATTENDEES</a></li>
+      <li class="special-limenu "><a class="active" href="/intel/faq-organizer-facilitator">FAQ ORGANIZER/FACILITATOR</a><div class="triangulo_sup"></div></li>
       <li><a href="/intel/hashtag-battle">HASHTAG BATTLE</a></li>
       <li><a href="/intel/chat-room">CHAT<br /> ROOM</a></li>
     </ul>
@@ -44,19 +44,18 @@ position: 5
 	<section class="row">
 		<div class="large-7 medium-6 columns">
 			{% editable_text title-intel %}
-	      	<h1 class="main-title intel">GLOBAL STARTUP BATTLE FAQ.</h1>
+	      	<h1 class="main-title intel">FACILITATOR/ORGANIZER FAQ.</h1>
 	 		{% endeditable_text %}
 	 		<div id="section-questions">
-	 			{% for faqattendee in contents.faqattendees %}
-		 			<div class="question">
-		 				<div class="red-square">+</div>
-		 				<div class="question-text">
-		 					{{faqattendee.question}}
-		 				</div>
-		 				<p class="intel-description">{{faqattendee.answer}}</p>
-
-		 			</div>
-		 		{% endfor %}
+	 			{% for faqorganizer in contents.faqorganizers %}
+	 			<div class="question">
+	 				<div class="red-square">+</div>
+	 				<div class="question-text">
+	 					{{faqorganizer.question}}
+	 				</div>
+	 				<p class="intel-description">{{faqorganizer.answer}}</p>
+	 			</div>
+	 			{% endfor %}
 	 		</div>
 	 	</div>
 	 	<div class="large-5 medium-6 columns">

@@ -20,11 +20,11 @@
 }
 @font-face { 
 	font-family: 'MuseoBold'; 
-	src: url('museo/MuseoSans_700.eot'); 
-	src: url('museo/MuseoSans_700.eot?#iefix') format('embedded-opentype'), 
-	url('museo/MuseoSans_700.woff') format('woff'), 
-	url('museo/MuseoSans_700.ttf') format('truetype'), 
-	url('museo/MuseoSans_700.svg#MuseoSans-700') format('svg'); 
+	src: url('museo/Museo900-Regular.eot'); 
+	src: url('museo/Museo900-Regular.eot?#iefix') format('embedded-opentype'), 
+	url('museo/Museo900-Regular.woff') format('woff'), 
+	url('museo/Museo900-Regular.ttf') format('truetype'), 
+	url('museo/Museo900-Regular.svg#Museo900-Regular') format('svg'); 
 	font-weight: normal; 
 	font-style: normal; 
 }
@@ -37,6 +37,7 @@
 	url('bn/BebasNeue.svg#BebasNeue') format('svg'); 
 	font-weight: normal; 
 	font-style: normal; 
+	
 }
 
 

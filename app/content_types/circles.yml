@@ -1,0 +1,139 @@
+# Public name of this content type
+name: Circles
+
+# TODO: explain
+slug: circles
+
+# Explanation for the backoffice
+description: A description of the content type for the editors
+
+# Default field (e.g title)
+label_field_name: name
+
+# Order of entries
+order_by: manually # default: manually, also available: created_at or any field slug
+
+# Order direction
+# order_direction: asc # default: asc, also available: desc
+
+# Display entries grouped by <field> in the backoffice
+# group_by: <your field>
+
+# Activate public 'create' API (e.g for a contact form)
+# public_submission_enabled: false
+
+# Emails to be notified on new entries using the public API
+# public_submission_accounts: ['john@acme.net']
+
+# Describe each field. The name shoud always be an underscored string
+fields: 
+- name: # Name of the field
+    label: Name
+    type: string
+    required: true
+    hint: A description of the field for the editors
+    localized: false
+
+- present_by: # Name of the field
+    label: Present By
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+
+- intro: # Name of the field
+    label: Intro
+    type: text
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+    # Enable or not the RTE [html|text]
+    # text_formatting: html
+
+- entry_link_url: # Name of the field
+    label: Entry link url
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+
+- video_youtube_url: # Name of the field
+    label: Video youtube url
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+
+- grand_prizes: # Name of the field
+    label: Grand prizes
+    type: has_many
+    required: false
+    hint: A description of the field for the editors
+    localized: false    # Define the slug of the target content type (eg. comments)
+    class_name: cgprizes
+    # Define the name of the field referring to Circles in the target content type (eg. post)
+    inverse_of: namegp
+    # If you want to manage the entries of the relationship directly from the source entry
+    ui_enabled: true
+    
+- secondary_prizes: # Name of the field
+    label: Secondary prizes
+    type: has_many
+    required: false
+    hint: A description of the field for the editors
+    localized: false    # Define the slug of the target content type (eg. comments)
+    class_name: csprizes
+    # Define the name of the field referring to Circles in the target content type (eg. post)
+    inverse_of: namesp
+    # If you want to manage the entries of the relationship directly from the source entry
+    ui_enabled: true
+
+- judges_heading: # Name of the field
+    label: Judges Heading
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+
+- judges: # Name of the field
+    label: Judges
+    type: has_many
+    required: false
+    hint: A description of the field for the editors
+    localized: false    # Define the slug of the target content type (eg. comments)
+    class_name: cjudges
+    # Define the name of the field referring to Circles in the target content type (eg. post)
+    inverse_of: namej
+    # If you want to manage the entries of the relationship directly from the source entry
+    ui_enabled: true
+
+- eligibility_copy: # Name of the field
+    label: Eligibility Copy
+    type: text
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+    text_formatting: html
+
+- rules_copy: # Name of the field
+    label: Rules Copy
+    type: text
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+    text_formatting: html
+
+- resources_copy: # Name of the field
+    label: Resources Copy 
+    type: text
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+    text_formatting: html
+
+- enter_circle_url: # Name of the field
+    label: Enter Circle Url
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false

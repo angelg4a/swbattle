@@ -1,109 +1,1502 @@
-- "Arkansas":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/15 # YYYY/MM/DD
- 
-- "Austin":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/15 # YYYY/MM/DD
+- "Geneva":
+    state: "N/A"
+    country: "Switzerland"
+    region: Europe
+    date: 2013/11/15
+    url: "http://geneve.startupweekend.org/"
+    status: "G"
 
-- "Boise":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/15 # YYYY/MM/DD
+- "Lehigh Valley":
+    state: "PA"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://lehighvalley.startupweekend.org"
+    status: "G"
 
-- "Bufalo":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/16 # YYYY/MM/DD
+- "Annaba":
+    state: "N/A"
+    country: "Algeria"
+    region: Middle East & North Africa
+    date: 2013/11/15
+    url: "http://annaba.startupweekend.org"
+    status: "G"
 
-- "Chilicoth, OH":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/16 # YYYY/MM/DD
+- "Las Palmas":
+    state: "N/A"
+    country: "Spain"
+    region: Europe
+    date: 2013/11/15
+    url: "http://grancanaria.startupweekend.org/"
+    status: "G"
 
-- "Dallas":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/17 # YYYY/MM/DD
+- "Abidjan":
+    state: "N/A"
+    country: "Côte d'Ivoire"
+    region: Middle East & North Africa
+    date: 2013/11/15
+    url: "http://abidjan.startupweekend.org"
+    status: "G"
 
-- "Evansville":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/18 # YYYY/MM/DD
+- "Barranquilla":
+    state: "N/A"
+    country: "Colombia"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://barranquilla.startupweekend.org"
+    status: "G"
 
-- "Fredericksburg":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/18 # YYYY/MM/DD
+- "Melbourne":
+    state: "N/A"
+    country: "Australia"
+    region: Australia & New Zealand
+    date: 2013/11/15
+    url: "http://melbourne.startupweekend.org"
+    status: "G"
 
-- "Harrisbug":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/18 # YYYY/MM/DD
+- "São Paulo":
+    state: "N/A"
+    country: "Brazil"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://saopaulo.startupweekend.org"
+    status: "G"
 
-- "Hudson Valley":
-    country: UNITED STATES
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Sheffield":
+    state: "N/A"
+    country: "UK"
+    region: Europe
+    date: 2013/11/15
+    url: "http://sheffield.startupweekend.org"
+    status: "G"
 
-- "Aalborg":
-    country: EUROPE
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Byblos, Lebanon":
+    state: "N/A"
+    country: "Lebanon"
+    region: Middle East & North Africa
+    date: 2013/11/15
+    url: "N/A"
+    status: "G"
 
-- "Aarthus":
-    country: EUROPE
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Eskisehir":
+    state: "N/A"
+    country: "Turkey"
+    region: Middle East & North Africa
+    date: 2013/11/15
+    url: "http://eskisehir.startupweekend.org"
+    status: "G"
 
-- "Athens":
-    country: EUROPE
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Mumbai":
+    state: "N/A"
+    country: "India"
+    region: Asia
+    date: 2013/11/15
+    url: "N/A"
+    status: "G"
 
-- "Barcelona":
-    country: EUROPE
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Hong Kong":
+    state: "N/A"
+    country: "China"
+    region: Asia
+    date: 2013/11/15
+    url: "N/A"
+    status: "G"
 
-- "Belgrade":
-    country: EUROPE
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Mount Lebanon":
+    state: "N/A"
+    country: "Lebanon"
+    region: Middle East & North Africa
+    date: 2013/11/15
+    url: "http://mountlebanon.startupweekend.org"
+    status: "G"
 
-- "Bergen":
-    country: EUROPE
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Gold Coast":
+    state: "N/A"
+    country: "Australia"
+    region: Australia & New Zealand
+    date: 2013/11/15
+    url: "http://goldcoast.startupweekend.org"
+    status: "G"
 
-- "Berlin":
-    country: EUROPE
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Washington":
+    state: "DC"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://www.dc.startupweekend.org"
+    status: "G"
 
-- "Melboume":
-    country: AUSTRALIA AND NEW ZEALAND
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Marseille":
+    state: "N/A"
+    country: "France"
+    region: Europe
+    date: 2013/11/15
+    url: "http://marseille.startupweekend.org/"
+    status: "G"
 
-- "New Zealand":
-    country: AUSTRALIA AND NEW ZEALAND
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Baku":
+    state: "N/A"
+    country: "Azerbaijan"
+    region: Middle East & North Africa
+    date: 2013/11/15
+    url: "N/A"
+    status: "G"
+
+- "Izmir":
+    state: "N/A"
+    country: "Turkey"
+    region: Middle East & North Africa
+    date: 2013/11/15
+    url: "N/A"
+    status: "G"
+
+- "Bangalore":
+    state: "N/A"
+    country: "India"
+    region: Asia
+    date: 2013/11/15
+    url: "N/A"
+    status: "G"
+
+- "Grenoble":
+    state: "N/A"
+    country: "France"
+    region: Europe
+    date: 2013/11/15
+    url: "http://grenoble.startupweekend.org/"
+    status: "G"
+
+- "Berne":
+    state: "N/A"
+    country: "Switzerland"
+    region: Europe
+    date: 2013/11/15
+    url: "http://bern.startupweekend.org/"
+    status: "G"
+
+- "Zagreb":
+    state: "N/A"
+    country: "Croatia"
+    region: Europa
+    date: 2013/11/15
+    url: "http://zagreb.startupweekend.org"
+    status: "G"
+
+- "Shenzhen":
+    state: "N/A"
+    country: "China"
+    region: Asia
+    date: 2013/11/15
+    url: "http://shenzhen.startupweekend.org"
+    status: "G"
+
+- "Mashhad":
+    state: "N/A"
+    country: "Iran"
+    region: Middle East & North Africa
+    date: 2013/11/20
+    url: "N/A"
+    status: "G"
+
+- "Sana'a":
+    state: "N/A"
+    country: "Yemen"
+    region: Middle East & North Africa
+    date: 2013/11/20
+    url: "http://sanaa.startupweekend.org"
+    status: "G"
+
+- "Tehran":
+    state: "N/A"
+    country: "Iran"
+    region: Middle East & North Africa
+    date: 2013/11/20
+    url: "N/A"
+    status: "G"
+
+- "Algiers":
+    state: "N/A"
+    country: "Algeria"
+    region: Middle East & North Africa
+    date: 2013/11/21
+    url: "N/A"
+    status: "G"
+
+- "Alexandria":
+    state: "N/A"
+    country: "Egypt"
+    region: Middle East & North Africa
+    date: 2013/11/21
+    url: "http://alexandria.startupweekend.org"
+    status: "G"
+
+- "Asharqia":
+    state: "N/A"
+    country: "Saudi Arabia"
+    region: Middle East & North Africa
+    date: 2013/11/21
+    url: "http://asharqia.startupweekend.org"
+    status: "G"
+
+- "Sohag":
+    state: "N/A"
+    country: "Egypt"
+    region: Middle East & North Africa
+    date: 2013/11/21
+    url: "http://sohag.startupweekend.org"
+    status: "G"
+
+- "Astana":
+    state: "N/A"
+    country: "Kazakhstan"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://astana.startupweekend.org"
+    status: "G"
+
+- "Taichung City, Taiwan":
+    state: "N/A"
+    country: "Taiwan"
+    region: Asia
+    date: 2013/11/22
+    url: "N/A"
+    status: "G"
+
+- "Kaohsiung City, Taiwan":
+    state: "N/A"
+    country: "Taiwan"
+    date: 2013/11/22
+    url: "N/A"
+    status: "G"
+
+- "Córdoba":
+    state: "N/A"
+    country: "Argentina"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://cordoba.startupweekend.org"
+    status: "G"
+
+- "Mansoura":
+    state: "N/A"
+    country: "Egypt"
+    region: Middle East & North Africa
+    date: 2013/11/22
+    url: "http://mansoura.startupweekend.org"
+    status: "G"
 
 - "Sydney":
-    country: AUSTRALIA AND NEW ZEALAND
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+    state: "N/A"
+    country: "Australia"
+    region: Australia & New Zealand
+    date: 2013/11/22
+    url: "http://sydney.startupweekend.org"
+    status: "G"
 
-- "Moscow":
-    country: RUSSIA
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Phnom Penh":
+    state: "N/A"
+    country: "Cambodia"
+    region: Asia
+    date: 2013/11/22
+    url: "http://cambodia.startupweekend.org"
+    status: "G"
 
-- "Saint-Petersburg":
-    country: RUSSIA
-    url: "http://www.google.com.mx"
-    date: 2013/11/19 # YYYY/MM/DD
+- "Kathmandu":
+    state: "N/A"
+    country: "Nepal"
+    region: Asia
+    date: 2013/11/22
+    url: "http://kathmandu.startupweekend.org"
+    status: "G"
+
+- "Taipei City, Taiwan":
+    state: "N/A"
+    country: "Taiwan"
+    region: Asia
+    date: 2013/11/22
+    url: "N/A"
+    status: "G"
+
+- "Herning":
+    state: "N/A"
+    country: "Denmark"
+    region: Europe
+    date: 2013/11/22
+    url: "http://herning.startupweekend.org"
+    status: "G"
+
+- "Cordoba":
+    state: "N/A"
+    country: "Spain"
+    region: Europe
+    date: 2013/11/22
+    url: "http://cordobaodb.startupweekend.org"
+    status: "G"
+
+- "Bergen":
+    state: "N/A"
+    country: "Norway"
+    region: Europe
+    date: 2013/11/22
+    url: "http://bergen.startupweekend.org"
+    status: "G"
+
+- "Auckland":
+    state: "N/A"
+    country: "New Zealand"
+    region: Australia & New Zealand
+    date: 2013/11/22
+    url: "http://auckland.startupweekend.org"
+    status: "G"
+
+- "Rio de Janeiro":
+    state: "N/A"
+    country: "Brazil"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://rio.startupweekend.org"
+    status: "G"
+
+- "Saint-Denis":
+    state: "N/A"
+    country: "France"
+    region: Europe
+    date: 2013/11/22
+    url: "N/A"
+    status: "G"
+
+- "Peshawar":
+    state: "N/A"
+    country: "Pakistan"
+    region: Asia
+    date: 2013/11/14
+    url: "http://peshawar.startupweekend.org"
+    status: "T"
+
+- "Pachuca":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "N/A"
+    status: "T"
+
+- "Wilmington":
+    state: "DE"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "delaware.startupweekend.org"
+    status: "T"
+
+- "Praia":
+    state: "N/A"
+    country: "Cape Verde"
+    region: Europe
+    date: 2013/11/15
+    url: "http://praia.startupweekend.org"
+    status: "T"
+
+- "Seattle":
+    state: "WA"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "N/A"
+    status: "T"
+
+- "Halifax":
+    state: "NS"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/15
+    url: "http://halifax.startupweekend.org"
+    status: "T"
+
+- "Vancouver, UBC":
+    state: "BC"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/15
+    url: "http://www.ubc.startupweekend.org"
+    status: "T"
+
+- "Prince George":
+    state: "BC"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/15
+    url: "http://www.princegeorge.startupweekend.org"
+    status: "T"
+
+- "Des Moines":
+    state: "IA"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://dsm.startupweekend.org/"
+    status: "T"
+
+- "Rouen":
+    state: "N/A"
+    country: "France"
+    region: Europe
+    date: 2013/11/15
+    url: "N/A"
+    status: "T"
+
+- "Chicago":
+    state: "IL"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://chicago.startupweekend.org/"
+    status: "T"
+
+- "Baghdad, Iraq":
+    state: "N/A"
+    country: "Iraq"
+    region: Middle East & North Africa
+    date: 2013/11/21
+    url: "N/A"
+    status: "T"
+
+- "Dallas":
+    state: "TX"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "N/A"
+    status: "T"
+
+- "Ljubljana":
+    state: "N/A"
+    country: "Slovenia"
+    region: Europe
+    date: 2013/11/22
+    url: "http://ljubljana.startupweekend.org"
+    status: "T"
+
+- "Seattle":
+    state: "WA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://www.seattleedu.startupweekend.org"
+    status: "T"
+
+- "islamabad":
+    state: "N/A"
+    country: "Pakistan"
+    region: Asia
+    date: 2013/11/22
+    url: "N/A"
+    status: "T"
+
+- "Bogotá":
+    state: "N/A"
+    country: "Colombia"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://javerianabog.startupweekend.org"
+    status: "T"
+
+- "Bogota":
+    state: "N/A"
+    country: "Colombia"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://bogota.startupweekend.org"
+    status: "T"
+
+- "Dar es Salaam":
+    state: "N/A"
+    country: "Tanzania"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://daressalaam.startupweekend.org"
+    status: "T"
+
+- "Kenitra":
+    state: "N/A"
+    country: "Morocco"
+    region: Middle East & North Africa
+    date: 2013/11/22
+    url: "http://kenitra.startupweekend.org"
+    status: "T"
+
+- "Port of Spain":
+    state: "N/A"
+    country: "Trinidad and Tobago"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://trinidad.startupweekend.org"
+    status: "T"
+
+- "Accra":
+    state: "N/A"
+    country: "Ghana"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://accra.startupweekend.org"
+    status: "T"
+
+- "Arusha":
+    state: "N/A"
+    country: "Tanzania"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://arusha.startupweekend.org"
+    status: "T"
+
+- "Salisbury":
+    state: "MD"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://www.salisbury.startupweekend.org"
+    status: "T"
+
+- "Kinshasa":
+    state: "N/A"
+    country: "Democratic Republic of the Congo"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://kinshasa.startupweekend.org"
+    status: "T"
+
+- "Lexington":
+    state: "KY"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://lexington.startupweekend.org/"
+    status: "T"
+
+- "Lusaka":
+    state: "N/A"
+    country: "Zambia"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://lusaka.startupweekend.org"
+    status: "T"
+
+- "Zanzibar":
+    state: "N/A"
+    country: "Tanzania"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://zanzibar.startupweekend.org"
+    status: "T"
+
+- "Antananarivo":
+    state: "N/A"
+    country: "Madagascar"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://tana.startupweekend.org"
+    status: "T"
+
+- "Tokyo":
+    state: "N/A"
+    country: "Japan"
+    region: Asia
+    date: 2013/11/22
+    url: "N/A"
+    status: "T"
+
+- "San Francisco":
+    state: "CA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://sfedu.startupweekend.org"
+    status: "T"
+
+- "6th of October City":
+    state: "N/A"
+    country: "Egypt"
+    region: Middle East & North Africa
+    date: 2013/11/14
+    url: "N/A"
+    status: "W"
+
+- "Managua":
+    state: "N/A"
+    country: "Nicaragua"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "N/A"
+    status: "W"
+
+- "Lima":
+    state: "N/A"
+    country: "Peru"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://lima.startupweekend.org"
+    status: "W"
+
+- "Sofia":
+    state: "N/A"
+    country: "Bulgaria"
+    region: Europe
+    date: 2013/11/15
+    url: "http://sofia.startupweekend.org"
+    status: "W"
+
+- "Caracas":
+    state: "N/A"
+    country: "Venezuela"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://caracas.startupweekend.org"
+    status: "W"
+
+- "Shanghai":
+    state: "N/A"
+    country: "China"
+    region: Asia
+    date: 2013/11/15
+    url: "N/A"
+    status: "W"
+
+- "Davis":
+    state: "CA"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://davis.startupweekend.org/"
+    status: "W"
+
+- "Sherbrooke":
+    state: "QC"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/15
+    url: "http://sherbrooke.startupweekend.org"
+    status: "W"
+
+- "Sioux Falls":
+    state: "SD"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://siouxfalls.startupweekend.org/"
+    status: "W"
+
+- "Arequipa":
+    state: "N/A"
+    country: "Peru"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://arequipa.startupweekend.org"
+    status: "W"
+
+- "Nuestra Señora de La Paz":
+    state: "N/A"
+    country: "Bolivia"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://lapaz.startupweekend.org"
+    status: "W"
+
+- "Tokyo":
+    state: "N/A"
+    country: "Japan"
+    region: Asia
+    date: 2013/11/15
+    url: "http://tokyo.startupweekend.org"
+    status: "W"
+
+- "Tokyo":
+    state: "N/A"
+    country: "Japan"
+    region: Asia
+    date: 2013/11/15
+    url: "http://tokyo.startupweekend.org"
+    status: "W"
+
+- "Santa Cruz de la Sierra":
+    state: "N/A"
+    country: "Bolivia"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "N/A"
+    status: "W"
+
+- "Spokane":
+    state: "WA"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://spokane.startupweekend.org"
+    status: "W"
+
+- "Michiana":
+    state: "IN"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://michiana.startupweekend.org/"
+    status: "W"
+
+- "St. Louis":
+    state: "MO"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://stlouis.startupweekend.org/"
+    status: "W"
+
+- "Lafayette":
+    state: "IN"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://greaterlafayette.startupweekend.org/"
+    status: "W"
+
+- "Valencia":
+    state: "N/A"
+    country: "Spain"
+    region: Europe
+    date: 2013/11/15
+    url: "http://valencia.startupweekend.org"
+    status: "W"
+
+- "Burgos":
+    state: "N/A"
+    country: "Spain"
+    region: Europe
+    date: 2013/11/15
+    url: "http://burgos.startupweekend.org/"
+    status: "W"
+
+- "Hays":
+    state: "KS"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://hays.startupweekend.org/"
+    status: "W"
+
+- "Syracuse":
+    state: "NY"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://www.syracuse.startupweekend.org"
+    status: "W"
+
+- "Boston":
+    state: "MA"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://boston.startupweekend.org"
+    status: "W"
+
+- "Tuxtla Gutiérrez":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://swchiapas.org"
+    status: "W"
+
+- "Cape Town":
+    state: "N/A"
+    country: "South Africa"
+    region: Sub-Saharan Africa
+    date: 2013/11/15
+    url: "http://capetown.startupweekend.org"
+    status: "W"
+
+- "Hermosillo":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://hermosillo.startupweekend.org"
+    status: "W"
+
+- "Farmington":
+    state: "NM"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://fourcorners.startupweekend.org"
+    status: "W"
+
+- "Santa Barbara":
+    state: "CA"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://santabarbara.startupweekend.org/"
+    status: "W"
+
+- "West Palm Beach":
+    state: "FL"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://westpalmbeach.startupweekend.org"
+    status: "W"
+
+- "Bloomington":
+    state: "IN"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://bloomington.startupweekend.org"
+    status: "W"
+
+- "Hamburg":
+    state: "N/A"
+    country: "Germany"
+    region: Europe
+    date: 2013/11/15
+    url: "http://hamburg.startupweekend.org"
+    status: "W"
+
+- "Bratislava":
+    state: "N/A"
+    country: "Slovakia"
+    region: Europe
+    date: 2013/11/15
+    url: "http://bratislava.startupweekend.org/"
+    status: "W"
+
+- "Cincinnati":
+    state: "OH"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://cincinnati.startupweekend.org/"
+    status: "W"
+
+- "Peoria":
+    state: "IL"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://peoria.startupweekend.org/"
+    status: "W"
+
+- "Las Cruces":
+    state: "NM"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://lascruces.startupweekend.org"
+    status: "W"
+
+- "New Brunswick":
+    state: "NB"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/15
+    url: "http://newbrunswickca.startupweekend.org "
+    status: "W"
+
+- "Albuquerque":
+    state: "NM"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://teenalbuquerque.startupweekend.org/"
+    status: "W"
+
+- "Klagenfurt":
+    state: "N/A"
+    country: "Austria"
+    region: Europe
+    date: 2013/11/15
+    url: "http://klagenfurt.startupweekend.org"
+    status: "W"
+
+- "Pasto":
+    state: "N/A"
+    country: "Colombia"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://pasto.startupweekend.org"
+    status: "W"
+
+- "Chandler":
+    state: "AZ"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://chandler.startupweekend.org"
+    status: "W"
+
+- "Brescia":
+    state: "N/A"
+    country: "Italy"
+    region: Europe
+    date: 2013/11/15
+    url: "http://brescia.startupweekend.org"
+    status: "W"
+
+- "Somerset":
+    state: "NJ"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://newjersey.startupweekend.org"
+    status: "W"
+
+- "Kansas City":
+    state: "MO"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://kansascity.startupweekend.org"
+    status: "W"
+
+- "Melbourne":
+    state: "FL"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://spacecoast.startupweekend.org"
+    status: "W"
+
+- "Cochabamba":
+    state: "N/A"
+    country: "Bolivia"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://cochabamba.startupweekend.org"
+    status: "W"
+
+- "Chisinau":
+    state: "N/A"
+    country: "Moldova"
+    region: Europe
+    date: 2013/11/15
+    url: "http://moldova.startupweekend.org"
+    status: "W"
+
+- "New Haven":
+    state: "CT"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://newhaven.startupweekend.org"
+    status: "W"
+
+- "Mexico City":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/15
+    url: "http://mexicocity.startupweekend.org/events/designers-edition/"
+    status: "W"
+
+- "Houston":
+    state: "TX"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://houston.startupweekend.org/"
+    status: "W"
+
+- "Detroit":
+    state: "MI"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://detroit.startupweekend.org"
+    status: "W"
+
+- "Northwest Arkansas":
+    state: "AR"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://northwestarkansas.startupweekend.org/"
+    status: "W"
+
+- "Chapel Hill":
+    state: "NC"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://triangle.startupweekend.org"
+    status: "W"
+
+- "Indianapolis":
+    state: "IN"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://indianapolis.startupweekend.org"
+    status: "W"
+
+- "Karachi":
+    state: "N/A"
+    country: "Pakistan"
+    region: Asia
+    date: 2013/11/15
+    url: "N/A"
+    status: "W"
+
+- "Columbus":
+    state: "OH"
+    country: "USA"
+    region: United States
+    date: 2013/11/15
+    url: "http://columbus.startupweekend.org/"
+    status: "W"
+
+- "Berlin":
+    state: "N/A"
+    country: "Germany"
+    region: Europe
+    date: 2013/11/15
+    url: "http://berlin.startupweekend.org"
+    status: "W"
+
+- "Sendai":
+    state: "N/A"
+    country: "Japan"
+    region: Asia
+    date: 2013/11/15
+    url: "N/A"
+    status: "W"
+
+- "Kyoto":
+    state: "N/A"
+    country: "Japan"
+    region: Asia
+    date: 2013/11/15
+    url: "N/A"
+    status: "W"
+
+- "Tabriz":
+    state: "N/A"
+    country: "Iran"
+    region: Middle East & North Africa
+    date: 2013/11/20
+    url: "N/A"
+    status: "W"
+
+- "Esfahan":
+    state: "N/A"
+    country: "Iran"
+    region: Middle East & North Africa
+    date: 2013/11/20
+    url: "N/A"
+    status: "W"
+
+- "Aswan":
+    state: "N/A"
+    country: "Egypt"
+    region: Middle East & North Africa
+    date: 2013/11/21
+    url: "http://aswan.startupweekend.org"
+    status: "W"
+
+- "Oran":
+    state: "N/A"
+    country: "Algeria"
+    region: Middle East & North Africa
+    date: 2013/11/21
+    url: "N/A"
+    status: "W"
+
+- "Las Vegas":
+    state: "NV"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://lasvegas.startupweekend.org"
+    status: "W"
+
+- "Tbilisi":
+    state: "N/A"
+    country: "Georgia"
+    region: Middle East & North Africa
+    date: 2013/11/22
+    url: "http://tbilisi.startupweekend.org"
+    status: "W"
+
+- "Paris":
+    state: "N/A"
+    country: "France"
+    region: Europe
+    date: 2013/11/22
+    url: "http://paris.startupweekend.org"
+    status: "W"
+
+- "Mindelo":
+    state: "N/A"
+    country: "Cape Verde"
+    region: Europe
+    date: 2013/11/22
+    url: "http://mindelo.startupweekend.org"
+    status: "W"
+
+- "Riga":
+    state: "N/A"
+    country: "Latvia"
+    region: Europe
+    date: 2013/11/22
+    url: "http://riga.startupweekend.org"
+    status: "W"
+
+- "St. John's":
+    state: "NL"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/22
+    url: "http://stjohns.startupweekend.org"
+    status: "W"
+
+- "Ogden":
+    state: "UT"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://ogden.startupweekend.org/"
+    status: "W"
+
+- "Stuttgart":
+    state: "N/A"
+    country: "Germany"
+    region: Europe
+    date: 2013/11/22
+    url: "http://stuttgart.startupweekend.org"
+    status: "W"
+
+- "Aguascalientes":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://aguascalientes.startupweekend.org"
+    status: "W"
+
+- "Toronto":
+    state: "ON"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/22
+    url: "http://toronto.startupweekend.org"
+    status: "W"
+
+- "Cambridge":
+    state: "N/A"
+    country: "UK"
+    region: Europe
+    date: 2013/11/22
+    url: "http://cambridge.startupweekend.org"
+    status: "W"
+
+- "Budapest":
+    state: "N/A"
+    country: "Hungary"
+    region: Europe
+    date: 2013/11/22
+    url: "http://budapest.startupweekend.org"
+    status: "W"
+
+- "Mexicali":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://mexicali.startupweekend.org"
+    status: "W"
+
+- "Morelia":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://morelia.startupweekend.org"
+    status: "W"
+
+- "Sevilla":
+    state: "N/A"
+    country: "Spain"
+    region: Europe
+    date: 2013/11/22
+    url: "http://sevilla.startupweekend.org"
+    status: "W"
+
+- "Colima":
+    state: "Colima"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://swcolima.org"
+    status: "W"
+
+- "Los Angeles":
+    state: "CA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://la.startupweekend.org/"
+    status: "W"
+
+- "Lome":
+    state: "N/A"
+    country: "Togo"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://lome.startupweekend.org"
+    status: "W"
+
+- "Lagos":
+    state: "N/A"
+    country: "Nigeria"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://lagos.startupweekend.org"
+    status: "W"
+
+- "Quebec City":
+    state: "QC"
+    country: "Canada"
+    region: Canada
+    date: 2013/11/22
+    url: "http://quebeccity.startupweekend.org"
+    status: "W"
+
+- "Strasbourg":
+    state: "N/A"
+    country: "France"
+    region: Europe
+    date: 2013/11/22
+    url: "http://strasbourg@startupweekend.org"
+    status: "W"
+
+- "Swansea":
+    state: "N/A"
+    country: "UK"
+    region: Europe
+    date: 2013/11/22
+    url: "http://swansea.startupweekend.org"
+    status: "W"
+
+- "Orlando":
+    state: "FL"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://orlando.startupweekend.org"
+    status: "W"
+
+- "Tampa Bay":
+    state: "FL"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://www.tampabay.startupweekend.org"
+    status: "W"
+
+- "Nottingham":
+    state: "N/A"
+    country: "UK"
+    region: Europe
+    date: 2013/11/22
+    url: "http://nottingham.startupweekend.org/"
+    status: "W"
+
+- "Kalamazoo":
+    state: "MI"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://kalamazoo.startupweekend.org/"
+    status: "W"
+
+- "Merida":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "N/A"
+    status: "W"
+
+- "Orange":
+    state: "CA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://orangecounty.startupweekend.org"
+    status: "W"
+
+- "Nairobi":
+    state: "N/A"
+    country: "Kenya"
+    region: Sub-Saharan Africa
+    date: 2013/11/22
+    url: "http://nairobi.startupweekend.org"
+    status: "W"
+
+- "Austin":
+    state: "TX"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://austin.startupweekend.org"
+    status: "W"
+
+- "Helsinki":
+    state: "N/A"
+    country: "Finland"
+    region: Europe
+    date: 2013/11/22
+    url: "http://helsinki.startupweekend.org"
+    status: "W"
+
+- "Guatemala City":
+    state: "N/A"
+    country: "Guatemala"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://guatemalacity.startupweekend.org"
+    status: "W"
+
+- "Utrecht":
+    state: "N/A"
+    country: "The Netherlands"
+    region: Europe
+    date: 2013/11/22
+    url: "http://utrecht.startupweekend.org"
+    status: "W"
+
+- "Granada":
+    state: "N/A"
+    country: "Spain"
+    region: Europe
+    date: 2013/11/22
+    url: "http://granada.startupweekend.org"
+    status: "W"
+
+- "Boca Raton":
+    state: "FL"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://bocaraton.startupweekend.org"
+    status: "W"
+
+- "Elon":
+    state: "NC"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://triad.startupweekend.org"
+    status: "W"
+
+- "Fortaleza":
+    state: "N/A"
+    country: "Brazil"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://fortaleza.startupweekend.org"
+    status: "W"
+
+- "Cape Cod":
+    state: "MA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://www.capecod.startupweekend.org"
+    status: "W"
+
+- "Mexico City":
+    state: "N/A"
+    country: "Mexico"
+    region: Latin America & The Caribbean
+    date: 2013/11/22
+    url: "http://mexicocity.startupweekend.org/events/women-edition/"
+    status: "W"
+
+- "Reno":
+    state: "NV"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://reno.startupweekend.org/"
+    status: "W"
+
+- "San Diego":
+    state: "CA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://sandiego.startupweekend.org"
+    status: "W"
+
+- "Bellingham":
+    state: "WA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://bellingham.startupweekend.org"
+    status: "W"
+
+- "Seattle":
+    state: "WA"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://www.seattleyouth.startupweekend.org"
+    status: "W"
+
+- "Prishtina":
+    state: "N/A"
+    country: "Kosovo"
+    region: Europe
+    date: 2013/11/22
+    url: "http://prishtina.startupweekend.org"
+    status: "W"
+
+- "Covilha":
+    state: "N/A"
+    country: "Portugal"
+    region: Europe
+    date: 2013/11/22
+    url: "http://covilha.startupweekend.org"
+    status: "W"
+
+- "Manchester":
+    state: "N/A"
+    country: "UK"
+    region: Europe
+    date: 2013/11/22
+    url: "http://manchester.startupweekend.org"
+    status: "W"
+
+- "Bucharest":
+    state: "N/A"
+    country: "Romania"
+    region: Europe
+    date: 2013/11/22
+    url: "http://romania.startupweekend.org"
+    status: "W"
+
+- "Osaka, Japan":
+    state: "N/A"
+    country: "Japan"
+    region: Asia
+    date: 2013/11/22
+    url: "N/A"
+    status: "W"
+
+- "Portland":
+    state: "OR"
+    country: "USA"
+    region: United States
+    date: 2013/11/22
+    url: "http://portland.startupweekend.org"
+    status: "W"

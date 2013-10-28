@@ -1,21 +1,31 @@
-.bebas{
-	font-family: 'BebasNeue';
-	text-transform:uppercase;
+.bebas {
+font-family: 'BebasNeue';
+text-transform: uppercase;
+font-weight: 300;
 }
 .mayus{
 	text-transform:uppercase;
 }
 .museo{
-	font-family: 'MuseoRegular';
+	font-family: 'Museo';
+font-weight: 300;
 }
 .bold{
 	font-weight:bold;
+}
+.bold-musseo{
+	font-family: 'Museo'; 
+font-weight: 900;
+
 }
 .size-60{
 	font-size: 60px;
 }
 .size-35{
 	font-size: 35px;
+}
+.size-25{
+	font-size: 25px;
 }
 .size-28{
 	font-size: 28px; 
@@ -29,7 +39,21 @@
 .red{
 	color: #c62426;
 }
+.space-events{
+	margin-bottom: 30px !important;
+}
+.boton-event{
+	font-size: 25px;
 
+color: #fff;
+background-color: #c62426;
+border: 0px;
+width: 140px;
+
+}
+.boton-event:hover{
+	background-color: #7a0a0b;
+}
 .txt-title{
 	text-align: center;
 	width: 658px;
@@ -39,7 +63,7 @@
 }
 .img-ue{ 
 	background-image: url('/images/ue.png');
-	padding-bottom: 30px;
+	padding-bottom: 1px;
 	position:relative;
 }
 hr {
@@ -70,7 +94,7 @@ hr {
 }
 
 .space-60{ 
-	padding-top: 60px;
+	padding-top: 75px;
 }
 .txt-title{
 text-align: center;
@@ -99,7 +123,7 @@ text-transform:uppercase;
 }
 .txts{
 	line-height:1.3;
-	padding: 0 14px;
+	padding: 0 40px;
 }
 .sbtxtt{
 		margin-bottom: -34px;
@@ -148,7 +172,7 @@ z-index: 2;
 	background: #000;
 	box-shadow: 0 1px 2px rgba(0,0,0,.25);
 	overflow: hidden;
-	height: 600px !important;
+	height: 600px ;
 	top: -22px;
 	margin-bottom:-55px;
 }  
@@ -186,7 +210,7 @@ z-index: 1;
 }
 	
 .banner h2 {
-	font-size: 100px;
+	font-size: 80px;
 	color: #fff;
 	font-family: 'BebasNeue';
 	margin-bottom: 2%;
@@ -200,11 +224,12 @@ z-index: 1;
 	color: #fff;
 	font-family: 'BebasNeue';
 	margin-bottom: 4%;
-	width: 63%;
-margin-top:2%;
-	margin-left: 20%;
+	width: 85%;
+margin-top:4%;
+	margin-left: 7.5%;
 	z-index: 9;
 	position: relative;
+	text-align: center;
 }
 
 .banner .btn {
@@ -227,7 +252,7 @@ margin-top:2%;
 	position: relative;
 } 
 .banner .btn:hover {
-	background: #C6244B;
+	background: #7a0a0b;
 }
 .banner .btn:active {
 	-webkit-filter: drop-shadow(0 -1px 2px rgba(0,0,0,.5));
@@ -265,19 +290,16 @@ margin-top: -17px;
 	border-radius: 6px;
 	
 	cursor: pointer;
-	
-	-webkit-transition: background .5s, opacity .5s;
-	-moz-transition: background .5s, opacity .5s;
-	transition: background .5s, opacity .5s;
+
 }
 .banner .dots li.active {
-       background: #C6244B;
+       background: #7a0a0b;
        opacity: 1;
-       border: 2px solid #C6244B;
+       border: 2px solid #7a0a0b;
 }
 
 .boton:hover {
-       background: #C6244B;
+       background: #7a0a0b;
 }
 
 .slide1{
@@ -317,8 +339,31 @@ cursor: pointer;
 }
 .inpt-red{
 	margin-bottom: 0px !important;
+	min-height:35px !important;
+}
+.inpt-red::-webkit-input-placeholder {
+	font-size:16px;
+   color: #c62426;
+font-weight: 100;
 }
 
+.inpt-red:-moz-placeholder { /* Firefox 18- */
+font-size:18px;
+   color: #c62426;  
+font-weight: 100;
+}
+
+.inpt-red::-moz-placeholder {  /* Firefox 19+ */
+font-size:18px;
+   color: #c62426; 
+font-weight: 100; 
+}
+
+.inpt-red:-ms-input-placeholder {  
+font-size:18px;
+   color: #c62426;
+font-weight: 100;  
+}
 .error-email{
 	display: none;
 	height: 20px;

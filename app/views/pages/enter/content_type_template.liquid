@@ -1,0 +1,144 @@
+---
+title: Event template page
+content_type: circles
+templatized: true
+---
+{% extends parent %}
+{% block main %}
+
+<div class="gradiente">  </div>
+<section class="page-circle">
+{% include sticky %}
+<div class="row">
+  <div class="large-12 medium-12 small-12 columns">
+    <ul class="sbmenu">
+      <li><a href="/enter/" class="active slug" data-name="enter">WHAT IS A CIRCLE?</a></li>
+    	{% for circle in contents.circles %}
+      <li><a href="/enter/{{ circle._slug }}" class="slug" data-name="{{ circle._slug }}">{{circle.name}}</a></li>
+      {% endfor %}
+    </ul>
+    <hr class="rdsor" />
+  </div>
+</div>
+<div class="row margin-section-bottom">
+	<div class="large-4 medium-4 small-12 columns">
+		<h1 class="bebas bebas-main ">{{circle.name}}</h1>
+		<h2 class="bebas bebas-sub">Presented by <a href="{{circle.entry_link_url}}"><span class="red">{{ circle.present_by }}</span></a></h2>
+		<p class="bebas-description">{{ circle.intro }}</p>
+		<a class="boton m-inf bebas" href="{{circle.enter_circle_url}}">Enter Circles</a> 
+	</div>
+	<div class="large-8 medium-8 small-12 columns">
+		<iframe src="{{circle.video_youtube_url}}" width="100%" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+</div>
+ <div class="bg-lgray">
+ 	<div class="row">
+ 		<div class="large-12 columns txt-title">
+ 			<h2 class=" size-60">{{circle.name}} Prizes</h2>
+ 		</div>
+ 	</div>
+ 	<div class="row">
+ 		<div class="large-12 columns">
+ 			<span class="twnty">GRAND PRIZE</span>
+ 			<hr class="przshr" />
+ 		</div>
+ 	</div>
+	<div class="row margin-section-bottom">
+		{% for cgprize in circle.grand_prizes %}
+		<div class="large-3 medium-6 small-6 columns">
+		<div class="cntnicn">
+			<div class="icon-circles"><img src="{{cgprize.icon.url}}"></div>
+		</div>
+			<h3 class="bebas cntr"> {{cgprize.heading}}</h3>
+			<p class="bebas-prize-description">{{cgprize.copy}}</p>
+		</div>
+		{% endfor %}
+	</div>
+<div class="row">
+ 		<div class="large-12 columns">
+ 			<span class="twnty">2ND & 3RD PRIZE</span>
+ 			<hr class="przshr" />
+ 		</div>
+ 	</div>
+	<div class="row mpddging">
+		{% for csprize in circle.secondary_prizes %}
+			<div class="large-3 medium-6 small-6 columns">
+			<div class="cntnicn">
+				<div class="icon-circles">
+					<img src="{{csprize.icon.url}}">
+				</div>
+			</div>
+				<h3 class="bebas cntr"> {{csprize.heading}}</h3>
+				<p>{{csprize.copy}}</p>
+			</div>
+		{% endfor %}
+
+	</div>
+ </div>
+ 	<div class="row  ">
+    	<div class=" large-12  medium-12 small-12 columns txt-title">
+        	<h2 class=" size-60">{{circle.judges_heading}}</h2>
+        </div>
+    </div>    
+	<div class="row mpddging">
+		{% assign total_judges = circle.judges.size %}
+		{% assign offs = 0 %}
+		{% for cjudge in circle.judges %}
+		{% if total_judges >= 4 %}
+			{% assign total_grid = 4 %}
+		{% elsif total_judges >= 3 %}
+			{% assign total_grid = 3 %}
+		{% elsif total_judges >= 2 %}
+			{% assign total_grid = 2 %}
+		{% elsif total_judges >= 1 %}
+			{% assign total_grid = 1 %}
+		{% endif %}
+		{% if total_judges > 0 %}
+			<ul class="large-block-grid-{{total_grid}} cntr">
+				{% for cjudge in circle.judges limit:{{total_grid}} offset:{{offs}} %}
+				  <li class="judges">
+
+				  <img src="{{ cjudge.profile.url }}" class="img-cir" alt="Global" />
+					<h3 class="bebas cntr">{{cjudge.name}}</h3>
+					<a href="https://twitter.com/{{cjudge.twitter_handle}}" tarhget>@{{cjudge.twitter_handle}}</a>
+				  </li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+		{% assign total_judges = total_judges | minus:total_grid %}
+		{% assign offs = total_grid %}
+		{% endfor %}
+	</div> 
+ <div class="bg-lgray">
+ 	<div class="row mpddging tpddging">
+ 		<div class="large-12 medium-12 small-12 columns">
+
+			<ul class="tabs"> 
+			<li class="elegibility"><a href="#elegibility">ELEGIBILITY</a></li> 
+			<li class="rules"><a href="#rules">RULES</a></li> 
+			<li class="resourses"><a href="#resourses">RESOURCES</a></li> 
+			</ul> 
+			<div class="tab_container"> 
+			<div id="elegibility" class="tab_content">
+				{{circle.eligibility_copy}}
+			</div> 
+
+			<div id="rules" class="tab_content"> 
+				{{circle.rules_copy}}
+			 </div> 
+			<div id="resourses" class="tab_content">
+			{{circle.resources_copy}} 
+			 </div> 
+			</div>
+		</div>
+ 	</div>
+	<div class="row mpddging">
+		<div class="large-4 large-offset-4 medium-4 small-12 small-offset-0">
+			<a class="boton m-inf bebas" href="{{circle.enter_circle_url}}">Enter Circle</a> 
+		</div>
+	</div>
+ </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,65 @@
+---
+title: Hashtag Battle
+
+# true if the page is included in the menu
+#listed: true
+
+# true if the page is published
+published: true
+
+# position among sibling pages
+#position: 5
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+---
+{% extends parent %}
+
+{% block main %}
+<div class="gradiente">  </div>
+<section class="page">
+	{% include sticky %}
+<div class="row">
+  <div class="large-12 medium-12 small-12 columns">
+    <ul class="sbmenu">
+      
+      <li><a href="/intel" >FAQ ATTENDEES</a></li>
+      <li class="special-limenu "><a  href="/intel/faq-organizer-facilitator">FAQ ORGANIZER/FACILITATOR</a></li>
+      <li><a class="active" href="/intel/hashtag-battle">HASHTAG BATTLE</a><div class="triangulo_sup"></div></li>
+      <li><a href="/intel/chat-room">CHAT<br /> ROOM</a></li>
+    </ul>
+    <hr class="rdsor" />
+  </div>
+</div>
+
+
+<section class="row">
+      {% editable_text title-hashtag %}
+     		<h1 class="main-title prizes">HASHTAG BATTLE</h1>
+        {% endeditable_text %}
+ 			<h2 class="subtitle prizes">PRESENTED BY {% editable_text presented-by %} <span>SIMPLY MEASURED</span>{% endeditable_text %}</h2>
+ 			<div class="large-offset-2 large-8 medium-offset-0 large-8 columns">
+        {% editable_text content-hashtag %}
+ 				<div class="description-text">
+ 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, similique officiis nobis corrupti rem temporibus molestias. Distinctio, suscipit, voluptatibus voluptatum beatae qui fugit amet adipisci natus debitis ut deserunt officiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quo nostrum impedit corrupti. Dicta, sint esse optio atque dignissimos quaerat impedit incidunt molestiae accusantium quasi id ex ullam sed delectus!
+ 				</div>
+        {% endeditable_text %}
+ 			</div>
+
+ 			<div class="large-12 columns cntr">
+ 				<h2 class="subtitle prizes">PRESENTED BY <img src="{{ 'simplymeasured.png' | theme_image_url }}" alt="Simply Measured"/></h2>
+ 			</div>
+
+</section>
+      
+
+</section>
+
+{% endblock %}

@@ -11,7 +11,7 @@ description: A description of the content type for the editors
 label_field_name: city
 
 # Order of entries
-order_by: manually # default: manually, also available: created_at or any field slug
+order_by: city # default: manually, also available: created_at or any field slug
 
 # Order direction
 # order_direction: asc # default: asc, also available: desc
@@ -34,27 +34,25 @@ fields:
     hint: A description of the field for the editors
     localized: false
 
-# - country: # Name of the field
-#     label: Country
-#     type: select
-#     select_options: ["UNITED STATES", "EUROPE", "AUSTRALIA AND NEW ZEALAND", "RUSSIA", "ASIA", "CANADA", "LATIN AMERICA & THE CARIBBEAN", "MIDDLE EAST & NORTH AFRICA", "SUB-SAHARAN AFRICA"]
-#     target: regions
-#     required: false
-#     hint: A description of the field for the editors
-#     localized: false
-
-- country: # Name of the field
-    label: Country
-    type: belongs_to
-    target: regions
-    ui_enabled: false
-
-- url: # Name of the field
-    label: Url
+- state: # Name of the field
+    label: State
     type: string
     required: false
     hint: A description of the field for the editors
     localized: false
+
+- country: # Name of the field
+    label: Country
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+
+- region: # Name of the field
+    label: Region
+    type: belongs_to
+    target: regions
+    ui_enabled: false
 
 - date: # Name of the field
     label: Date
@@ -63,11 +61,17 @@ fields:
     hint: A description of the field for the editors
     localized: false
 
-#- eventos:
- #   label: Eventos
-  #  type: has_many
-   # target: eventos
-    #inverse_of: country
-    #ui_enabled: true
+- url: # Name of the field
+    label: Url
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false
 
+- status: # Name of the field
+    label: Status
+    type: string
+    required: false
+    hint: A description of the field for the editors
+    localized: false
     

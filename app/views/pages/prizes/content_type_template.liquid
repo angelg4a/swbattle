@@ -1,51 +1,26 @@
 ---
-title: Prizes
-
-# true if the page is included in the menu
-listed: true
-
-# true if the page is published
-published: true
-
-# position among sibling pages
-position: 3
-
-# sets a redirection to the given url (301)
-# redirect_url: "<url to a page or to a remote url>"
-
-# content type that this page is templatizing
-# content_type: "<slug of one of the content types>"
-
-# editable_elements:
-#   'some_block/some_slug': "<text>"
-#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+title: Event template page
+content_type: circles
+templatized: true
 ---
 {% extends parent %}
-
 {% block main %}
+
 <div class="gradiente">  </div> 
 <section class="page">
 	{% include sticky %}
 	  <div class="row">
   <div class="large-12 medium-12 small-12 columns">
     <ul class="sbmenu">
-    	{% for circle in contents.circles limit:1 %}
-      <li><a href="/prizes/{{ circle._slug }}" class="active slug" data-name="{{ circle._slug }}">{{circle.name}}</a><div class="triangulo_sup"></div></li>
-      {% endfor %}
-      {% for circle in contents.circles offset:1 %}
+      {% for circle in contents.circles %}
       <li><a href="/prizes/{{ circle._slug }}" class="active slug" data-name="{{ circle._slug }}">{{circle.name}}</a></li>
-      {% endfor %}
-      {% for circle in contents.circles limit:1 %}
-      <li style="display:none;"><a href="/prizes/{{ circle._slug }}" class="active slug" data-name="{{ circle._slug }}">{{circle.name}}</a></li>
       {% endfor %}
     </ul>
     <hr class="rdsor" />
   </div>
 </div>
 	
-
 		<section class="row">
-			{% for circle in contents.circles limit:1 %}
      		<h1 class="main-title prizes">{{circle.name}}</h1>
  			<h2 class="subtitle prizes">PRESENTED BY <a href="{{circle.entry_link_url}}"><span>{{ circle.present_by }}</span></a></h2>
  				<div class="large-offset-2 large-8 medium-offset-0 large-8 columns">
@@ -145,7 +120,6 @@ position: 3
 		    		<h3 class="title-bottom-prize">PRIZES PIQUED YOUR INTERESTED? <a href="{{circle.enter_circle_url}}" class="redref"><span class="red">JOIN THE BATTLE</span></a></h3>
 		    	</div>
 		    </div>
-		    {% endfor %}
       </section>
       
 

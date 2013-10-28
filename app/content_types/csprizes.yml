@@ -1,14 +1,14 @@
 # Public name of this content type
-name: Regions
+name: Csprizes
 
 # TODO: explain
-slug: regions
+slug: csprizes
 
-# Explanation for the backoffice 
+# Explanation for the backoffice
 description: A description of the content type for the editors
 
 # Default field (e.g title)
-label_field_name: country
+label_field_name: heading
 
 # Order of entries
 order_by: manually # default: manually, also available: created_at or any field slug
@@ -27,23 +27,31 @@ order_by: manually # default: manually, also available: created_at or any field 
 
 # Describe each field. The name shoud always be an underscored string
 fields: 
-- country: # Name of the field
-    label: Country
+- heading: # Name of the field
+    label: Heading
     type: string
     required: true
     hint: A description of the field for the editors
     localized: false
 
-- city:
-    label: Cities
-    type: has_many
-    target: events
-    inverse_of: region
-    ui_enabled: true
-
-- acronym: # Name of the field
-    label: Acronym
-    type: string
+- copy: # Name of the field
+    label: Copy
+    type: text
     required: false
     hint: A description of the field for the editors
     localized: false
+    # Enable or not the RTE [html|text]
+    # text_formatting: html
+
+- icon: # Name of the field
+    label: Icon
+    type: file
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+
+- namesp: # Name of the field
+    label: NameSp
+    type: belongs_to
+    target: circles
+    ui_enabled: false

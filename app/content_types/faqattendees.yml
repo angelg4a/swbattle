@@ -1,14 +1,14 @@
 # Public name of this content type
-name: Regions
+name: Faqattendees
 
 # TODO: explain
-slug: regions
+slug: faqattendees
 
-# Explanation for the backoffice 
+# Explanation for the backoffice
 description: A description of the content type for the editors
 
 # Default field (e.g title)
-label_field_name: country
+label_field_name: question
 
 # Order of entries
 order_by: manually # default: manually, also available: created_at or any field slug
@@ -27,22 +27,15 @@ order_by: manually # default: manually, also available: created_at or any field 
 
 # Describe each field. The name shoud always be an underscored string
 fields: 
-- country: # Name of the field
-    label: Country
+- question: # Name of the field
+    label: Question
     type: string
     required: true
     hint: A description of the field for the editors
     localized: false
 
-- city:
-    label: Cities
-    type: has_many
-    target: events
-    inverse_of: region
-    ui_enabled: true
-
-- acronym: # Name of the field
-    label: Acronym
+- answer: # Name of the field
+    label: Answer
     type: string
     required: false
     hint: A description of the field for the editors

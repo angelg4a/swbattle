@@ -10,11 +10,12 @@ position: 0
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Startup Battle</title>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <title>{{ page.title }}</title>
   {{ '../fonts/all' | stylesheet_tag }}
   {{ 'application.css' | stylesheet_tag }}
   {{ '../javascripts/source/jquery.fancybox.css' | stylesheet_tag }}
+  {{ '../stylesheets/smoothness/jquery-ui-1.10.3.custom.min.css' | stylesheet_tag }}
   {% inline_editor %}
 </head>
 <body>
@@ -32,7 +33,7 @@ position: 0
           <p>thousands of entrepreneurs across the globe have joined the battle for innovation. </p>
           <h2>Have you?</h2>
         {% endeditable_text %}
-        <a class="btn mayus" href="#download">Enter the batle</a>
+        <a class="btn mayus" href="/enter">Enter the batle</a>
       </li>
       <li class="slide2">
         {% editable_text slide-2 %}
@@ -55,7 +56,7 @@ position: 0
 </div>
 <div id="menu-second">
   <div class="row">
-    <div class="large-offset-2 large-12 medium-offset-0 medium-12 small-12 columns ctm-m">
+    <div class="large-offset-2 large-10 medium-offset-0 medium-12 small-12 columns ctm-m">
     <div>
     <a href="/cities" class="fanc">
       <div class="sprites-social pin"></div><p> FIND EVENT</p>
@@ -64,10 +65,37 @@ position: 0
     <div class="smenus">
       <a class="btn various fancybox.iframe" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1&amp;wmode=transparent"><div class="sprites-social playvideo"></div>WATCH VIDEO</a>
    </div>
-   <div class="smenus">
-      <a href="#">
+   <div class="smenus hsclctn">
+      <a href="#" class="hscl">
         <div class="sprites-social share"></div> SHARE THIS
       </a>
+
+        <div class="shared hsclshrd">
+      <script type="text/javascript">
+        document.write('<a href="https://twitter.com/share?url='+document.URL+'" target="_blank" onClick="window.open(this.href, this.target,'+" 'width=500,height=510'); return false;"+'">');
+      </script>
+
+      <div class="roundersocial">
+      <div class="social-icons twtr-blk"></div>
+      </div>
+      </a>
+      
+      <script type="text/javascript">
+        document.write('<a href="https://www.facebook.com/sharer/sharer.php?u='+document.URL+'" target="_blank" onClick="window.open(this.href, this.target,'+" 'width=500,height=300'); return false;"+'">');
+      </script>
+        <div class="roundersocial">
+      <div class="social-icons fcbk-blk"></div>
+      </div>
+      </a>
+      <script type="text/javascript">
+        document.write('<a href="https://plus.google.com/share?url='+document.URL+'" target="_blank" onClick="window.open(this.href, this.target,'+" 'width=500,height=510'); return false;"+'">');
+      </script>
+      
+<div class="roundersocial">
+      <div class="social-icons ggl-blk"></div>
+      </div>
+      </a>
+      </div>
    </div>
              
     </div>
@@ -88,7 +116,7 @@ position: 0
         {% endeditable_text %}
         </div>
       </div>
-      <div class="row">
+      <div class="row mpddg">
         <div class="large-4 medium-4 small-12 columns">
           <div class='center'>  
             <div class=" sprites-stats  glbl"></div>
@@ -101,7 +129,7 @@ position: 0
           </div>
           <div>
             <p class='size-15 txts'>
-              Global Startup Battle is back bigger than ever and is bringing the global entrepreneur community together from <span class='bold'>100s of cities around the world</span> for a competitive week of collaboration and learning. Are you ready to innovate?
+              Global Startup Battle is back bigger than ever and is bringing the global entrepreneur community together from <span class='bold-musseo'>100s of cities around the world</span> for a competitive week of collaboration and learning. Are you ready to innovate?
             </p>
           </div>
           {% endeditable_text %}
@@ -118,7 +146,7 @@ position: 0
           </div>
           <div>
             <p class='size-15 txts'>
-              More is at stake in this year's GSB with more opportunities to win even bigger prizes. Compete in multiple <span class='bold'>circle competitions</span> and take your team to the top to show off your innovations to our celebrity judges.
+              More is at stake in this year's GSB with more opportunities to win even bigger prizes. Compete in multiple <span class='bold-musseo'>circle competitions</span> and take your team to the top to show off your innovations to our celebrity judges.
             </p>
           </div>
           {% endeditable_text %}
@@ -135,7 +163,7 @@ position: 0
           </div>
           <div>
             <p class='size-15 txts'>
-              The battle is more heated with the <span class='bold'>Communications Dashboard</span> making it easier than ever to keep track of all the action and keep in touch with other GSB collaborators. Watch, share, and discuss as hashtag battles unfold simultaneously.
+              The battle is more heated with the <span class='bold-musseo'>Communications Dashboard</span> making it easier than ever to keep track of all the action and keep in touch with other GSB collaborators. Watch, share, and discuss as hashtag battles unfold simultaneously.
             </p>
           </div>
           {% endeditable_text %}
@@ -143,6 +171,24 @@ position: 0
       </div>
     </div>
   </div>
+ <div class="bg-lgray">
+  <div class="row">
+  <div class=" large-10 medium-10 small-10 columns"/>
+    <p class="bebas title-glbal">
+        Global Startup Battle is a featured even of <span class="red">Global Entrepreneurship Week</span>
+       </p>
+       <p class="txt-gbls">Learn more at <a href="http://unleashingideas.org">unleashingideas.org</a></p>
+  </div>
+  <div class=" large-2 medium-2 small-2 columns"/>
+    <a href="http://www.unleashingideas.org/"><img src="{{ 'globalenter.png' | theme_image_url }}" class="img-gbl" alt="Global" /></a>
+  </div>
+
+
+  </div>
+  </div>
+
+
+
  {% include events %}
  <div class="bg-lgray">
   <div class="row">
@@ -215,17 +261,17 @@ position: 0
 
 
 <div class="row fblkspons">
-  <div class="large-3 medium-3 small-6 columns"><img src="{{ 'google.png' | theme_image_url }}" alt="Google Entrepreneurs" /></div>
-  <div class="large-3 medium-3 small-6 columns"><img src="{{ 'coca-cola.png' | theme_image_url }}" alt="Coca Cola" /></div>
-  <div class="large-3 medium-3 small-6 columns"> <img src="{{ 'amazon.png' | theme_image_url }}" alt="Amazon" /> </div>
-  <div class="large-3 medium-3 small-6 columns">  <img src="{{ 'co.png' | theme_image_url }}" alt="Co" /> </div>
-</div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.google.com/entrepreneurs/"><img src="{{ 'google.png' | theme_image_url }}" alt="Google Entrepreneurs" /></a></div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.coca-cola.com/"><img src="{{ 'coca-cola.png' | theme_image_url }}" alt="Coca Cola" /></a></div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.amazon.com/"> <img src="{{ 'amazon.png' | theme_image_url }}" alt="Amazon" /></a> </div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.go.co/">  <img src="{{ 'co.png' | theme_image_url }}" alt="Co" /> </div>
+</a></div>
 
 <div class="row cntr">
-  <div class="large-3 medium-3 small-6 columns"><img src="{{ 'microsoft.png' | theme_image_url }}" alt="Microsoft" class="mtim" /></div>
-  <div class="large-3 medium-3 small-6 columns">  <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="Big Commerce" class="mtim" /></div>
-  <div class="large-3 medium-3 small-6 columns"><img src="{{ 'sprint.png' | theme_image_url }}" alt="Sprint" class="mtiml" /></div>
-  <div class="large-3 medium-3 small-6 columns"><img src="{{ 'globlaenter.png' | theme_image_url }}" alt="Global" /></div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.microsoft.com/"><img src="{{ 'microsoft.png' | theme_image_url }}" alt="Microsoft" class="mtim" /></a></div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.bigcommerce.com/">  <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="Big Commerce" class="mtim" /></a></div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.sprint.com/"><img src="{{ 'sprint.png' | theme_image_url }}" alt="Sprint" class="mtiml" /></a></div>
+  <div class="large-3 medium-3 small-6 columns"><a href="http://www.unleashingideas.org/"><img src="{{ 'globlaenter.png' | theme_image_url }}" alt="Global" /></a></div>
 
 </div>
 
@@ -244,10 +290,14 @@ position: 0
   {{ 'zepto.js' | javascript_tag }}
   {{ 'foundation/foundation.js' | javascript_tag }}
   {{ 'jquery' | javascript_tag }}
+  {{ 'jquery-ui-1.10.3.custom.min' | javascript_tag }}
   {{ 'unslider.min' | javascript_tag }}
   {{ 'source/jquery.fancybox' | javascript_tag }}
   {{ 'chosen.jquery' | javascript_tag }}
-    {{ 'scripts' | javascript_tag }}
+    {{ 'scripts-change' | javascript_tag }}
+{{ 'myscripts' | javascript_tag }} 
+  {{ 'scripts' | javascript_tag }}
+
 
 </body>
 </html>

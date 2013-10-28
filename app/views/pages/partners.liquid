@@ -8,7 +8,7 @@ listed: true
 published: true
 
 # position among sibling pages
-# position: 1
+position: 4
 
 # sets a redirection to the given url (301)
 # redirect_url: "<url to a page or to a remote url>"
@@ -25,17 +25,7 @@ published: true
 {% block main %}
 <div class="gradiente">  </div>
 <section class="page">
-
-<div class="sticky">
-<div class="frststicky" >
-    <div class="sprites-social top"></div>
-    TOP
-</div>
-    <div class="scndsticky">
-    <div class="sprites-social share" style="margin: 8px 30% !important;" ></div>
-    SHARE
-    </div>
-  </div>
+{% include sticky %}
 	<section class="row">
 {% editable_text title-partners %}
       <h1 class="main-title">Global Startup Battle wouldn't be possible <br/>
@@ -43,7 +33,7 @@ published: true
  {% endeditable_text %}
       </section>
       <div class="row">
-      	<div class="large-offset-1 large-3 medium-4 medium-offset-0 small-12 columns cntr"> 
+      	<div class="large-offset-1 large-3 medium-4 medium-offset-0 small-12 columns rght"> 
       		<a href="#"><img src="{{ 'google.png' | theme_image_url }}" alt="Google Entrepreneurs" /></a>
       	</div>
       	
@@ -64,7 +54,7 @@ published: true
       	<div class="large-offset-1 large-10 medium-offset-0 medium-12 columns"><hr class="divs" /></div>
       </div>
        <div class="row">
-      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns cntr"> 
+      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns rght"> 
       		<a href="#"><img src="{{ 'coca-cola.png' | theme_image_url }}" alt="Coca Cola" /></a>
       	</div>
       	
@@ -85,7 +75,7 @@ published: true
       	<div class="large-offset-1 large-10 medium-offset-0 medium-12 columns"><hr class="divs" /></div>
       </div>
         <div class="row">
-      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns cntr"> 
+      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns rght"> 
       		<a href="#"> <img src="{{ 'amazon.png' | theme_image_url }}" alt="Amazon" /> </a>
       	</div>
       	
@@ -128,7 +118,7 @@ published: true
       	<div class="large-offset-1 large-10 medium-offset-0 medium-12 columns"><hr class="divs" /></div>
       </div>
         <div class="row">
-      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns "> 
+      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns rght"> 
       		<a href="#"> <img src="{{ 'microsoft.png' | theme_image_url }}" alt="Microsoft" /> </a>
       	</div>
       	
@@ -149,7 +139,7 @@ published: true
       	<div class="large-offset-1 large-10 medium-offset-0 medium-12 columns"><hr class="divs" /></div>
       </div>
        <div class="row">
-      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns cntr"> 
+      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns rght"> 
       		<a href="#">  <img src="{{ 'bigcommerce.png' | theme_image_url }}" alt="Big Commerce" /> </a>
       	</div>
       	
@@ -170,7 +160,7 @@ published: true
       	<div class="large-offset-1 large-10 medium-offset-0 medium-12 columns"><hr class="divs" /></div>
       </div>
        <div class="row">
-      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns cntr"> 
+      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns rght"> 
       		<a href="#">   <img src="{{ 'sprint.png' | theme_image_url }}" alt="Sprint" /> </a>
       	</div>
       	
@@ -191,7 +181,7 @@ published: true
       	<div class="large-offset-1 large-10 medium-offset-0 medium-12 columns"><hr class="divs" /></div>
       </div>
       <div class="row">
-      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns cntr"> 
+      	<div class="large-offset-1 large-3 medium-offset-0 medium-4 small-12 columns rght"> 
       		<a href="#">   <img src="{{ 'globlaenter.png' | theme_image_url }}" alt="Global" /> </a>
       	</div>
       	

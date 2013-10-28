@@ -8,7 +8,7 @@ listed: true
 published: true
 
 # position among sibling pages
-# position: 1
+position: 2
 
 # sets a redirection to the given url (301)
 # redirect_url: "<url to a page or to a remote url>"
@@ -25,24 +25,15 @@ published: true
 {% block main %}
 <div class="gradiente">  </div>
 <section class="page-circle">
-  <div class="sticky">
-    <div class="frststicky" >
-        <div class="sprites-social top"></div>
-        TOP
-    </div>
-        <div class="scndsticky">
-        <div class="sprites-social share" style="margin: 8px 30% !important;" ></div>
-        SHARE
-        </div>
-  </div>
+{% include sticky %}
 <div class="row">
   <div class="large-12 medium-12 small-12 columns">
     <ul class="sbmenu">
-      <li><a href="" class="active">WHAT IS A CIRCLE?</a><div class="triangulo_sup"></div></li>
-      <li><a href="">CHAMPION'S CIRCLE</a></li>
-      <li><a href="">WOMEN'S CIRCLE</a></li>
-      <li><a href="">CLOUD CIRCLE</a></li>
-      <li><a href="">DOMAIN CIRCLE</a></li>
+      <li><a href="/enter/" class="active slug" data-name="enter">WHAT IS A CIRCLE?</a></li>
+      {% for circle in contents.circles %}
+      <li><a href="/enter/{{ circle._slug }}" class="slug" data-name="{{ circle._slug }}">{{circle.name}}</a></li>
+      {% endfor %}
+
     </ul>
     <hr class="rdsor" />
   </div>
@@ -56,7 +47,7 @@ published: true
  </section>
 <div class="row">
    <div class="customgrd">
-      <div class="sprites-circle pin"></div>
+      <div class="sprites-circle pin-enter"></div>
         <div><span class="step">01</span><span class="title-step">Find a Local Event to Attend</span></div>
         {% editable_text text-find-a-local-event %}
         <p class="description">Attend one of over 200+ GSB Startup Weekend events happening world wide during November 15 and November 22</p>

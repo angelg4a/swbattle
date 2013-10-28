@@ -1,14 +1,14 @@
 # Public name of this content type
-name: Regions
+name: Customer messages
 
 # TODO: explain
-slug: regions
+slug: customer_messages
 
-# Explanation for the backoffice 
-description: A description of the content type for the editors
+# Explanation for the backoffice
+description: Messages submitted via the website
 
 # Default field (e.g title)
-label_field_name: country
+label_field_name: name
 
 # Order of entries
 order_by: manually # default: manually, also available: created_at or any field slug
@@ -23,27 +23,29 @@ order_by: manually # default: manually, also available: created_at or any field 
 # public_submission_enabled: false
 
 # Emails to be notified on new entries using the public API
-# public_submission_accounts: ['john@acme.net']
+
 
 # Describe each field. The name shoud always be an underscored string
 fields: 
-- country: # Name of the field
-    label: Country
+- name: # Name of the field
+    label: Name
     type: string
     required: true
     hint: A description of the field for the editors
     localized: false
 
-- city:
-    label: Cities
-    type: has_many
-    target: events
-    inverse_of: region
-    ui_enabled: true
-
-- acronym: # Name of the field
-    label: Acronym
+- email: # Name of the field
+    label: Email
     type: string
     required: false
     hint: A description of the field for the editors
     localized: false
+
+- message: # Name of the field
+    label: Message
+    type: text
+    required: false
+    hint: A description of the field for the editors
+    localized: false
+
+public_submission_enabled: true
